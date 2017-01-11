@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcceleratorMagnets(InheritanceExample)", "AcceleratorMagnets(InheritanceExample)\AcceleratorMagnets(InheritanceExample).csproj", "{84601C7A-D4F9-40CB-A00B-0DCBDE8BE680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{FFBA1049-C4CA-4D02-8E68-91BA032790E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84601C7A-D4F9-40CB-A00B-0DCBDE8BE680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84601C7A-D4F9-40CB-A00B-0DCBDE8BE680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84601C7A-D4F9-40CB-A00B-0DCBDE8BE680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84601C7A-D4F9-40CB-A00B-0DCBDE8BE680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFBA1049-C4CA-4D02-8E68-91BA032790E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBA1049-C4CA-4D02-8E68-91BA032790E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBA1049-C4CA-4D02-8E68-91BA032790E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBA1049-C4CA-4D02-8E68-91BA032790E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

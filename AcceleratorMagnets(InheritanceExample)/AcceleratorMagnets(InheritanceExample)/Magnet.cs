@@ -21,7 +21,6 @@ namespace AcceleratorMagnets_InheritanceExample_
         // method for printing core information about magnet
         public void GetInformation()
         {
-            Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("Magnetic lenght is equal to  {0}m", MagneticLenght);
             switch (material)
             {

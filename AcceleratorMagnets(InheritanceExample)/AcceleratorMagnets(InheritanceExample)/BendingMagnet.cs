@@ -23,80 +23,31 @@ namespace AcceleratorMagnets_InheritanceExample_
         // Method for geting trajectory 
         public void PlotTrajectory()
         {
-            Console.ForegroundColor = ConsoleColor.Gray;
-            Console.WriteLine();
-            Console.WriteLine("The trajectory is  ");
-            Console.WriteLine("\n");
+            Console.WriteLine(new string('-',40));
             Console.ForegroundColor = ConsoleColor.Red;
 
             switch (beta)
                 {
                     case BendingRadius.weak:
-                        if (fd == FieldDirection.Left)
-                        {
-                            Console.WriteLine("* * * * * * * * * * ");
-                            Console.WriteLine("                      *");
-                            Console.WriteLine("                           *");
-                            Console.WriteLine("                                *");
-                            Console.WriteLine("                                     *");
-                        }
-                        else
-                        {
-                            Console.WriteLine("                                     *");
-                            Console.WriteLine("                                *");
-                            Console.WriteLine("                           *");
-                            Console.WriteLine("                      *");
-                            Console.WriteLine("* * * * * * * * * * ");
-                        }                
+                        if (fd == FieldDirection.Left) Console.WriteLine("Trajectory function of bending with WEAK field and Left direction");
+                        else Console.WriteLine("Trajectory function of bending with WEAK field and Right direction");                
                         break;
+
                     case BendingRadius.medium:
-                        if (fd == FieldDirection.Left)
-                        {
-                            Console.WriteLine("* * * * * * * * * * ");
-                            Console.WriteLine("                    *");
-                            Console.WriteLine("                      *");
-                            Console.WriteLine("                        *");
-                            Console.WriteLine("                          *");
-                            Console.WriteLine("                            *");
-                        }
-                        else
-                        {
-                            Console.WriteLine("                            *");
-                            Console.WriteLine("                          *");
-                            Console.WriteLine("                        *");
-                            Console.WriteLine("                      *");
-                            Console.WriteLine("                    *");
-                            Console.WriteLine("* * * * * * * * * * ");                     
-                        }
-                        
-                        break;
+                    if (fd == FieldDirection.Left) Console.WriteLine("Trajectory function of bending with MEDIUM field and Left direction");
+                    else Console.WriteLine("Trajectory function of bending with MEDIUM field and Right direction");
+                    break;
+
                     case BendingRadius.hard:
-                        if (fd == FieldDirection.Left)
-                        {
-                            Console.WriteLine("* * * * * * * * * * ");
-                            Console.WriteLine("                   *");
-                            Console.WriteLine("                    *");
-                            Console.WriteLine("                     *");
-                            Console.WriteLine("                      *");
-                            Console.WriteLine("                       *");
-                            Console.WriteLine("                        *");
-                        }
-                        else
-                        {
-                            Console.WriteLine("                        *");
-                            Console.WriteLine("                       *");
-                            Console.WriteLine("                      *");
-                            Console.WriteLine("                     *");
-                            Console.WriteLine("                    *");
-                            Console.WriteLine("                   *");
-                            Console.WriteLine("* * * * * * * * * * ");              
-                        }            
-                        break;
+                    if (fd == FieldDirection.Left) Console.WriteLine("Trajectory of bending with HARD field and Left direction");
+                    else Console.WriteLine("Trajectory function of bending with HARD field and Right direction");
+                    break;
+
                     default:
                         break;
-                }     
-            }
-
-        
+                }
+            Console.WriteLine(new string('*', 40));
+            Console.ForegroundColor = ConsoleColor.Gray;
+        }      
     }
 }

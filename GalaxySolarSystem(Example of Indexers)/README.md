@@ -17,4 +17,7 @@ Galaxy1[Planets.Aquarii] = 1;
 Galaxy1[Planets.Jupiter] = 2;
 Galaxy1[Planets.Proxima] = 3;
 ```
-![The output is the full information about your Solar system] (https://cloud.githubusercontent.com/assets/24522089/21958406/df04d260-dac6-11e6-9773-189126c50797.PNG)
+
+The output is the full information about your Solar system
+
+![Output] (https://cloud.githubusercontent.com/assets/24522089/21958406/df04d260-dac6-11e6-9773-189126c50797.PNG)

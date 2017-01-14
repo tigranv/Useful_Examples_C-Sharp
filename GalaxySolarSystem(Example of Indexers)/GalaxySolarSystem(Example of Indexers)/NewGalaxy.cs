@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GalaxySolarSystem_Example_of_Indexers_
 {
@@ -25,7 +21,7 @@ namespace GalaxySolarSystem_Example_of_Indexers_
         private Planets[] planets;
         private int[] direction;
 
-        // Indexer for planet namies
+        // Indexer for planet names
         public Planets this[int index]
         {
             get
@@ -50,13 +46,14 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             {
                 for (int i = 0; i < planets.Length; i++)
                     if (planets[i] == index) return direction[i];
-                    return -1;
+                throw new ArgumentOutOfRangeException();
             }
             set
             {
+                int indicate = 0;
                 for (int i = 0; i < planets.Length; i++)
-                    if (planets[i] == index) direction[i] = value;
-                    else throw new ArgumentOutOfRangeException();
+                    if (planets[i] == index) { direction[i] = value; indicate++; }
+                if(indicate == 0) throw new ArgumentOutOfRangeException();
             }
         }
 

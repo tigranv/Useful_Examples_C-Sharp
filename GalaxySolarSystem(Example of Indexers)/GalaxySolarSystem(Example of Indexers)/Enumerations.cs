@@ -36,5 +36,4 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             Andromeda,
             MilkyWay
         }
-    
 }

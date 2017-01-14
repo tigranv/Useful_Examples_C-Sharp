@@ -1,6 +1,6 @@
 # Working with Interfacies 
 
-```c#
+```ruby
 // Let's create new solar system
 // Select the galaxy, sun, and the number of planets(1-10)
 NewGalaxy Galaxy1 = new NewGalaxy(Galaxy.Andromeda, Sun.Sirius, 4);

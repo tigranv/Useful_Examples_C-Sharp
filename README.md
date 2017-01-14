@@ -1,4 +1,5 @@
-# Useful-examples   ![a] (<iframe src="//giphy.com/embed/13HgwGsXF0aiGY" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/13HgwGsXF0aiGY">via GIPHY</a></p>)
+# Useful-examples  
+![a] (https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
 In this repository, I gathered a lot of useful examples of code that I created while studying programming
 
 1. [Accelerator magnets(Inheritance Example)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))

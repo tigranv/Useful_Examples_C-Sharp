@@ -7,6 +7,6 @@ in second method ....
 
 ![Method2](https://cloud.githubusercontent.com/assets/24522089/21953137/c53f4816-da48-11e6-96b0-1792be8d9dbe.PNG)
 
-The execution time of method ToInt32 is 10 times smaller
+The execution time of method ToInt32 is 1000 times smaller
 
 ![Execition times](https://cloud.githubusercontent.com/assets/24522089/21953062/4f4f6a9c-da47-11e6-94d4-fbec2c3c5bb2.PNG)

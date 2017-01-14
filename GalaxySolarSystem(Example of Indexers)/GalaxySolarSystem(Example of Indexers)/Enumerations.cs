@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace GalaxySolarSystem_Example_of_Indexers_
 {
-    class Enumerations
-    {
-        public enum SolarSystem
+        public enum Sun
         {
-            Sun,
-
-
+            SolarSystem,
+            AlphaCentauri,
+            Luhman,
+            Sirius
         }
 
         public enum Planets
         {
-            Mars ,
+            Mars,
             Jupiter, 
             Earth,
             Uranus, 
@@ -27,7 +26,9 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             Venus, 
             Sun, 
             Moon, 
-            Pluto, 
+            Pluto,
+            Aquarii,
+            Proxima
         }
 
         public enum Galaxy
@@ -35,5 +36,5 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             Andromeda,
             MilkyWay
         }
-    }
+    
 }

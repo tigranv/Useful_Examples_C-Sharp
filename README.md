@@ -4,3 +4,5 @@ In this repository, I gathered a lot of useful examples of code that I created w
 [Accelerator magnets(Inheritance Example)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))
 
 [Functions for converting 4 byte numbers to one int in binary] (https://github.com/tigranv/Useful-examples/tree/master/From4BytesToInt32Methods)
+
+[Working with Indexers(Program for constructing new Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))

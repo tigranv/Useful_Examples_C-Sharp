@@ -14,7 +14,7 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             // Select the galaxy, sun, and the number of planets(1-10)
             NewGalaxy Galaxy1 = new NewGalaxy(Galaxy.Andromeda, Sun.Sirius, 4);
 
-            // Choose your planets mames (indexer by number of planets)
+            // Choose your planets names (indexer by number of planets)
             Galaxy1[0] = (Planets)1;
             Galaxy1[1] = (Planets)12;
             Galaxy1[2] = Planets.Venus;

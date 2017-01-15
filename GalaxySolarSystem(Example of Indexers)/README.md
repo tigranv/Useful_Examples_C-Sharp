@@ -1,6 +1,7 @@
 # Working with Interfacies 
 
 Let's create new solar system using class **NewGalaxy**
+
 Select the galaxy, sun(from Galaxy and Sun enumerations) and the number of planets.
 
 ```c#
@@ -23,6 +24,7 @@ Galaxy1[Planets.Jupiter] = 2;
 Galaxy1[Planets.Proxima] = 3;
 ```
 Use methhod **GetInfo** for base information about your galaxy and sun.
+
 Getting information about positions of planets organised as follows(**indexer by numbers used in indexer by names**)
 ```C#
 for (int i = 0; i < Galaxy1.Numberofplanets; i++)
@@ -43,5 +45,41 @@ The output is the full information about your Solar system
 ![Output] (https://cloud.githubusercontent.com/assets/24522089/21958406/df04d260-dac6-11e6-9773-189126c50797.PNG)
 
 ###Here are the codes of indexers
+```C#
+// Indexer by planets numbers for names
+        public Planets this[int index]
+        {
+            get
+            {
+                if (index >= 0 && index < numberofplanets)
+                    return planets[index];
+                else throw new ArgumentOutOfRangeException();
+            }
+            set
+            {
 
+                if (index >= 0 && index < numberofplanets)
+                    planets[index] = (Planets)value;
+                else throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        // Indexer by planets names, for position
+        public int this[Planets index]
+        {
+            get
+            {
+                for (int i = 0; i < planets.Length; i++)
+                    if (planets[i] == index) return position[i];
+                throw new ArgumentOutOfRangeException();
+            }
+            set
+            {
+                int indicate = 0;
+                for (int i = 0; i < planets.Length; i++)
+                    if (planets[i] == index) { position[i] = value; indicate++; }
+                if(indicate == 0) throw new ArgumentOutOfRangeException();
+            }
+        }
+```
 

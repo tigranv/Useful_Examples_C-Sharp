@@ -11,7 +11,7 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             this.sun = sun;
             Numberofplanets = numberofplanets;
             planets = new Planets[numberofplanets];
-            direction = new int[numberofplanets];
+            position = new int[numberofplanets];
         }
 
         // fields
@@ -19,7 +19,7 @@ namespace GalaxySolarSystem_Example_of_Indexers_
         private Galaxy galaxy;
         public Sun sun;  
         private Planets[] planets;
-        private int[] direction;
+        private int[] position;
 
         // Indexer for planet names
         public Planets this[int index]
@@ -39,20 +39,20 @@ namespace GalaxySolarSystem_Example_of_Indexers_
             }
         }
 
-        // Indexer for planet directions
+        // Indexer for planet position
         public int this[Planets index]
         {
             get
             {
                 for (int i = 0; i < planets.Length; i++)
-                    if (planets[i] == index) return direction[i];
+                    if (planets[i] == index) return position[i];
                 throw new ArgumentOutOfRangeException();
             }
             set
             {
                 int indicate = 0;
                 for (int i = 0; i < planets.Length; i++)
-                    if (planets[i] == index) { direction[i] = value; indicate++; }
+                    if (planets[i] == index) { position[i] = value; indicate++; }
                 if(indicate == 0) throw new ArgumentOutOfRangeException();
             }
         }

@@ -10,4 +10,4 @@ In this repository, I gathered a lot of useful examples that I created while stu
 4. [Fibonacci Calculator (Example of using indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
 
-<img src="https://cloud.githubusercontent.com/assets/24522089/21958536/0aed1ce0-daca-11e6-859f-7a06d6f74b8f.gif" align="middle" width="400px" height="300px" /> 
+<img src="https://cloud.githubusercontent.com/assets/24522089/21958536/0aed1ce0-daca-11e6-859f-7a06d6f74b8f.gif" align="center" width="400px" height="300px" /> 

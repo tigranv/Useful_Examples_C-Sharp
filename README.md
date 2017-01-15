@@ -7,7 +7,7 @@ In this repository, I gathered a lot of useful examples that I created while stu
 
 3. [Working with Indexers(Program for constructing new Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
-4. [Fibonacci Calculator()example of using inexers] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
+4. [Fibonacci Calculator (Example of using inexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
 
 

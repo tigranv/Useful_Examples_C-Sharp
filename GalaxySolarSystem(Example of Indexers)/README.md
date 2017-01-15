@@ -1,7 +1,6 @@
 # Working with Interfacies 
 
-Let's create new solar system using class **NewGalaxy**
-
+Let's create new solar system using class **NewGalaxy**                 
 Select the galaxy, sun(from Galaxy and Sun enumerations) and the number of planets.
 
 ```c#

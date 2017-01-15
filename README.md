@@ -1,4 +1,5 @@
-# In this repository, I gathered a lot of useful examples of code that I created while studying programming
+# Useful Examples on C# 
+In this repository, I gathered a lot of useful examples of code that I created while studying programming
 
 1. [Accelerator magnets(Inheritance Example)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))
 

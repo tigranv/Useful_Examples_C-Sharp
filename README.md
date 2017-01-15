@@ -1,5 +1,5 @@
 # Useful Examples on C#  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="150px" height="150px" /> 
-In this repository, I gathered a lot of useful examples of code that I created while studying programming
+In this repository, I gathered a lot of useful examples that I created while studying programming
 
 1. [Accelerator magnets(Inheritance Example)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))
 

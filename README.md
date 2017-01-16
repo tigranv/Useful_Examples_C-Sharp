@@ -9,6 +9,7 @@ In this repository, I gathered a lot of useful examples that I created while stu
 
 4. [Fibonacci Calculator (Example of using indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
+5. [Converting Latin letters to Armenian (Example of using extention methods and dictionary)] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
 
 > Projects written on C# Community 2015, .NET Framework 4.6
 

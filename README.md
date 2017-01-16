@@ -7,7 +7,9 @@ In this repository, I gathered a lot of useful examples that I created while stu
 
 3. [Working with Indexers(Program for constructing new Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
+4. [Fibonacci Calculator (Example of using indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
 
+> Projects written on C# Community 2015, .NET Framework 4.6
 
- ![a] (https://cloud.githubusercontent.com/assets/24522089/21958536/0aed1ce0-daca-11e6-859f-7a06d6f74b8f.gif)
+: <img src="https://cloud.githubusercontent.com/assets/24522089/21958536/0aed1ce0-daca-11e6-859f-7a06d6f74b8f.gif" align="middle" width="500px" height="300px" /> 

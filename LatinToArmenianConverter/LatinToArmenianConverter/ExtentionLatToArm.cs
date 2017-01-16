@@ -10,7 +10,7 @@ namespace LatinToArmenianConverter
             value.ToLower();
             var dictionary = new Dictionary<string, string>();
             string toArm = string.Empty;
-            string alph = "abcdefghjijklmnopqrstuvwxyz&@";
+            string alph = "qwertyuiopasdfghjklzxcvbnm@&";
 
             dictionary.Add("&", "ճ");
             dictionary.Add("@", "ը");
@@ -77,7 +77,7 @@ namespace LatinToArmenianConverter
                             break;
 
                         default:
-                            if (alph.Contains(value.Substring(i)))
+                            if (alph.Contains(value[i].ToString()))
                             {
                                 toArm += dictionary[value[i].ToString()];
                             }
@@ -90,7 +90,7 @@ namespace LatinToArmenianConverter
                 }
                 else
                 {
-                    if (alph.Contains(value.Substring(i)))
+                    if (alph.Contains(value[i].ToString()))
                     {
                         toArm += dictionary[value[i].ToString()];
                     }

@@ -9,7 +9,8 @@ namespace From4BytesToInt32Methods
         // First method to convert 4 bytes to int32, by converting at first to binary string
         public static int FromByteToInt1(byte a, byte b, byte c, byte d)
         {
-            string s = Convert.ToString(d, 2).PadLeft(8, '0') + Convert.ToString(c, 2).PadLeft(8, '0') + Convert.ToString(b, 2).PadLeft(8, '0') + Convert.ToString(a, 2).PadLeft(8, '0');
+            string s = Convert.ToString(d, 2).PadLeft(8, '0') + Convert.ToString(c, 2).PadLeft(8, '0') + 
+                Convert.ToString(b, 2).PadLeft(8, '0') + Convert.ToString(a, 2).PadLeft(8, '0');
             var decim = 0;
             for (int i = 0; i < s.Length; i++)
             {

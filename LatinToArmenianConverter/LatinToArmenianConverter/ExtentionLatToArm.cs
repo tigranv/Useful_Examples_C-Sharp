@@ -75,6 +75,10 @@ namespace LatinToArmenianConverter
                             toArm += "ծ";
                             i++;
                             break;
+                        case ":)":
+                            toArm += "\u263B";
+                            i++;
+                            break;
 
                         default:
                             if (alph.Contains(value[i].ToString()))
@@ -91,14 +95,14 @@ namespace LatinToArmenianConverter
                 else
                 {
                     if (alph.Contains(value[i].ToString()))
-                    {
-                        toArm += dictionary[value[i].ToString()];
-                    }
-                    else
-                    {
-                        toArm += value[i].ToString();
-                    }
-                    break;
+                            {
+                                toArm += dictionary[value[i].ToString()];
+                            }
+                            else
+                            {
+                                toArm += value[i].ToString();
+                            }
+                            break;
                 }
             }
             return toArm;

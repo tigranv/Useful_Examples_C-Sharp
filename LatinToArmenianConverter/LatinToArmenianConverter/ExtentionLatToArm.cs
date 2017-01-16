@@ -75,6 +75,10 @@ namespace LatinToArmenianConverter
                             toArm += "շ";
                             i++;
                             break;
+                        case "ts":
+                            toArm += "ծ";
+                            i++;
+                            break;
 
                         default:
                             if (alph.Contains(value.Substring(i)))

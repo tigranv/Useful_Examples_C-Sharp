@@ -79,6 +79,10 @@ namespace LatinToArmenianConverter
                             toArm += "\u263B";
                             i++;
                             break;
+                        case ":(":
+                            toArm += "\u2639";
+                            i++;
+                            break;
 
                         default:
                             if (alph.Contains(value[i].ToString()))

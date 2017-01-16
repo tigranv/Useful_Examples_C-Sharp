@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExtentionLatToArm.cs" />
-    <Compile Include="LatToArm.cs" />
+    <Compile Include="LatToArmTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

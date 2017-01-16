@@ -13,6 +13,8 @@ namespace LatinToArmenianConverter
         {
             value.ToLower();
             var dictionary = new Dictionary<string, string>();
+            string toArm = string.Empty;
+            string alph = "abcdefghjijklmnopqrstuvwxyz&@";
 
             dictionary.Add("&", "ճ");
             dictionary.Add("@", "ը");
@@ -24,6 +26,7 @@ namespace LatinToArmenianConverter
             dictionary.Add("f", "ֆ");
             dictionary.Add("g", "գ");
             dictionary.Add("h", "հ");
+            dictionary.Add("i", "ի");
             dictionary.Add("j", "ջ");
             dictionary.Add("k", "կ");
             dictionary.Add("l", "լ");
@@ -41,19 +44,6 @@ namespace LatinToArmenianConverter
             dictionary.Add("x", "խ");
             dictionary.Add("y", "յ");
             dictionary.Add("z", "զ");
-            dictionary.Add(" ", " ");
-            dictionary.Add(".", ".");
-            dictionary.Add(",", ",");
-            dictionary.Add(":", ":");
-            dictionary.Add("(", "(");
-            dictionary.Add(")", ")");
-            dictionary.Add("[", "[");
-            dictionary.Add("]", "]"); 
-            dictionary.Add("{", "}");
-            dictionary.Add("]", "]");
-
-
-            string toArm = string.Empty;
 
             for (int i = 0; i < value.Length; i++)
             {
@@ -87,13 +77,28 @@ namespace LatinToArmenianConverter
                             break;
 
                         default:
-                            toArm += dictionary[value[i].ToString()];
+                            if (alph.Contains(value.Substring(i)))
+                            {
+                                toArm += dictionary[value[i].ToString()];
+                            }
+                            else
+                            {
+                                toArm += value[i].ToString();
+                            }
                             break;
                     }
                 }
                 else
                 {
-                    toArm += dictionary[value[i].ToString()];
+                    if (alph.Contains(value.Substring(i)))
+                    {
+                        toArm += dictionary[value[i].ToString()];
+                    }
+                    else
+                    {
+                        toArm += value[i].ToString();
+                    }
+                    break;
                 }
             }
             return toArm;

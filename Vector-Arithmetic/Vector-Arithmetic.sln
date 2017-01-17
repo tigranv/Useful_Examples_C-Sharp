@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector-Arithmetic", "Vector-Arithmetic\Vector-Arithmetic.csproj", "{44E05080-1901-48B4-9CF2-AFE283999F07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingVectorsAtithmetic", "TestingVectorsAtithmetic\TestingVectorsAtithmetic.csproj", "{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44E05080-1901-48B4-9CF2-AFE283999F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E05080-1901-48B4-9CF2-AFE283999F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E05080-1901-48B4-9CF2-AFE283999F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E05080-1901-48B4-9CF2-AFE283999F07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

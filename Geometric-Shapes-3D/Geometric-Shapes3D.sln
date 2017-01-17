@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricShapes3D", "GeometricShapes3D\GeometricShapes3D.csproj", "{6F473B00-3F9E-46E2-8319-1AAE794C6399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{3B8D973B-54BE-4190-AF5D-3B6089DDEF7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F473B00-3F9E-46E2-8319-1AAE794C6399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F473B00-3F9E-46E2-8319-1AAE794C6399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F473B00-3F9E-46E2-8319-1AAE794C6399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F473B00-3F9E-46E2-8319-1AAE794C6399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B8D973B-54BE-4190-AF5D-3B6089DDEF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B8D973B-54BE-4190-AF5D-3B6089DDEF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B8D973B-54BE-4190-AF5D-3B6089DDEF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B8D973B-54BE-4190-AF5D-3B6089DDEF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorArithmetic", "VectorArithmetic\VectorArithmetic.csproj", "{E8C73B45-E5FF-4D34-B7FD-27A00E86E32A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VectorArithmetic", "VectorArithmetic\VectorArithmetic.csproj", "{18586A46-4045-4C8A-8E41-531D6FA2803C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingVectorsAtithmetic", "TestingVectorsAtithmetic\TestingVectorsAtithmetic.csproj", "{73D7760B-D38E-495B-9572-C75C94DEDD37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingVectorsAtithmetic", "TestingVectorsAtithmetic\TestingVectorsAtithmetic.csproj", "{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8C73B45-E5FF-4D34-B7FD-27A00E86E32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8C73B45-E5FF-4D34-B7FD-27A00E86E32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8C73B45-E5FF-4D34-B7FD-27A00E86E32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8C73B45-E5FF-4D34-B7FD-27A00E86E32A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73D7760B-D38E-495B-9572-C75C94DEDD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73D7760B-D38E-495B-9572-C75C94DEDD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73D7760B-D38E-495B-9572-C75C94DEDD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73D7760B-D38E-495B-9572-C75C94DEDD37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18586A46-4045-4C8A-8E41-531D6FA2803C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18586A46-4045-4C8A-8E41-531D6FA2803C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18586A46-4045-4C8A-8E41-531D6FA2803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18586A46-4045-4C8A-8E41-531D6FA2803C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC47676-BAF6-4EE3-AC35-0A8C8C74FA31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

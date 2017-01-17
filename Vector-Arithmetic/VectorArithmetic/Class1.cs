@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Vector_Arithmetic
+namespace VectorArithmetic
 {
-    public class VectorArithmetic
+    public class Class1
     {
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Vector-Arithmetic")]
+[assembly: AssemblyTitle("VectorArithmetic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Vector-Arithmetic")]
+[assembly: AssemblyProduct("VectorArithmetic")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("44e05080-1901-48b4-9cf2-afe283999f07")]
+[assembly: Guid("e8c73b45-e5ff-4d34-b7fd-27a00e86e32a")]
 
 // Version information for an assembly consists of the following four values:
 //

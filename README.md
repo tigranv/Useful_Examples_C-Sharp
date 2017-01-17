@@ -11,9 +11,9 @@ In this repository, I gathered a lot of useful examples that I created while stu
 
 5. [Converting Latin letters to Armenian (Example of using extention methods and dictionary)] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
 
-6. [Vector Arithmetic (Example of Operator Overloading] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
+6. [Vector Arithmetic (Example of Operator Overloading)] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
 
-7. [3D Geometric Shapes (Example Interfacies] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D)
+7. [3D Geometric Shapes (Example Interfacies)] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D)
 
 > Projects written on C# Community 2015, .NET Framework 4.6
 

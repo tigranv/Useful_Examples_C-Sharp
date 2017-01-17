@@ -1,2 +1,2 @@
-# Vector-Arithmetic
-Interpretation of the addition, subtraction of two vectors and vector rotations
+# Vector-Arithmetic example of using operators overloading
+Interpretation of addition and subtraction of two vectors 

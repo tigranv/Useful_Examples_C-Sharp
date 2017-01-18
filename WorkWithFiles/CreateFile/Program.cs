@@ -34,7 +34,7 @@ namespace CreateFile
                 fs.Close();
                 //Write in file.
                 StreamWriter sw = new StreamWriter(path);      
-                sw.WriteLineAsync("ev urem es fajly grela mi hat shat angraget bayc hayrenaser txa");
+                sw.WriteLineAsync("Some text");
                 sw.Close();
                 //read from file.
                 StreamReader sr = File.OpenText(path);

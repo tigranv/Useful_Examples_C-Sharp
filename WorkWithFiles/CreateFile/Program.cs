@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 
 namespace CreateFile
@@ -33,18 +29,26 @@ namespace CreateFile
                     
                 } while (File.Exists(path));
 
-                // Create the file.
-                FileStream fs = File.Create(path);     
-                Byte[] info = new UTF8Encoding(true).GetBytes("Some text");
-                // Add some information to the file.
-                fs.Write(info, 0, info.Length);
-                             
+                //Create the file.
+                FileStream fs = File.Create(path);
+                fs.Close();
+
+                StreamWriter sw = new StreamWriter(path);      
+                sw.WriteLine("exav?");
+                sw.Close();
+
+                StreamReader sr = File.OpenText(path);
+                string textline = sr.ReadLine();
+                Console.WriteLine(textline);
+                sr.Close();
             }
 
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
+
+            Console.ReadKey();
         }
     }
 }

@@ -33,8 +33,9 @@ namespace CreateFile
                 FileStream fs = File.Create(path);
                 fs.Close();
                 //Write in file.
+                Console.WriteLine("Write some text in your document");
                 StreamWriter sw = new StreamWriter(path);      
-                sw.WriteLineAsync("Some text");
+                sw.WriteLineAsync(Console.ReadLine());
                 sw.Close();
                 //read from file.
                 StreamReader sr = File.OpenText(path);

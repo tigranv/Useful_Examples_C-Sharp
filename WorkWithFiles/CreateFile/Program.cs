@@ -40,6 +40,7 @@ namespace CreateFile
                 //read from file.
                 StreamReader sr = File.OpenText(path);
                 string textline = sr.ReadLine();
+                Console.WriteLine(new string('-', 30));
                 Console.WriteLine(textline);
                 sr.Close();
             }

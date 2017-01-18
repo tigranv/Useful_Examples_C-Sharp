@@ -28,7 +28,7 @@ namespace LatinToArmenianConverter
             dictionary.Add("l", "լ");
             dictionary.Add("m", "մ");
             dictionary.Add("n", "ն");
-            dictionary.Add("o", "օ");
+            dictionary.Add("o", "ո");
             dictionary.Add("p", "պ");
             dictionary.Add("q", "ք");
             dictionary.Add("r", "ր");
@@ -83,8 +83,35 @@ namespace LatinToArmenianConverter
                             toArm += "\u2639";
                             i++;
                             break;
-
                         default:
+                            if (value.Substring(i, 2) == "vo" && i == 0)
+                            {
+                                toArm += "ո";
+                                i++;
+                                break;
+                            }
+                            if (value.Substring(i, 2) == "vo" && i != 0 && (value[i-1].ToString() == "\n" || value[i - 1].ToString() == " "))
+                            {
+                                toArm += "ո";
+                                i++;
+                                break;
+                            }
+                            if (value.Substring(i, 1) == "o" && i == 0)
+                            {
+                                toArm += "օ";
+                                break;
+                            }
+                            if (value.Substring(i, 1) == "o" && i != 0 && (value[i - 1].ToString() == "\n" || value[i - 1].ToString() == " "))
+                            {
+                                toArm += "օ";               
+                                break;
+                            }
+                            
+                            if (value.Substring(i, 1) == "e" && i != 0 && (value[i - 1].ToString() == " " && value[i + 1].ToString() == " "))
+                            {
+                                toArm += "Է";
+                                break;
+                            }
                             if (alph.Contains(value[i].ToString()))
                             {
                                 toArm += dictionary[value[i].ToString()];

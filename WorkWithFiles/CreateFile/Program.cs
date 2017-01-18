@@ -32,11 +32,11 @@ namespace CreateFile
                 //Create the file.
                 FileStream fs = File.Create(path);
                 fs.Close();
-
+                //Write in file.
                 StreamWriter sw = new StreamWriter(path);      
-                sw.WriteLine("exav?");
+                sw.WriteLineAsync("ev urem es fajly grela mi hat shat angraget bayc hayrenaser txa");
                 sw.Close();
-
+                //read from file.
                 StreamReader sr = File.OpenText(path);
                 string textline = sr.ReadLine();
                 Console.WriteLine(textline);

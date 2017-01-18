@@ -14,8 +14,18 @@ namespace LatinToArmenianConverter
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Մուտքագրեք լատինատառ արտահայտություն");
             string armenian = Console.ReadLine();
-            //StreamReader sr = File.OpenText(@"C:\Users\Tigran PC\Desktop\TestDirectory\Necessary1.txt");
-            //string armenian = sr.ReadLine();
+
+            
+            // // for translating files use this 
+            //Console.WriteLine("Մուտքագրեք թարգմանվող ֆայլի հասցեն");
+            //StreamReader sr = File.OpenText(@"C:\Users\Tigran PC\Desktop\TestDirectory\lattoarm.txt");
+            //string armenian = "";
+            //string arm = "";
+            //while ((arm = sr.ReadLine()) != null)
+            //{
+            //    armenian+= arm+"\n";
+            //}
+ 
             Console.WriteLine(armenian.LatToArmConverter());
 
             } while (Console.ReadKey().Key != ConsoleKey.Escape);

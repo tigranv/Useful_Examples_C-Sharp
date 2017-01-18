@@ -11,23 +11,30 @@ namespace Kill_Unnecessary_Files_
     {
         static void Main(string[] args)
         {
-            DirectoryInfo di = new DirectoryInfo(@"C:\Users\Tigran PC\Desktop\TestDirectory");
-
-            foreach (FileInfo file in di.GetFiles())
+            Console.WriteLine("Do You really want to clean directory? Yes or No");
+            if(Console.ReadLine() == "Yes")
             {
-                switch (file.Name)
+                DirectoryInfo di = new DirectoryInfo(@"C:\Users\Tigran PC\Desktop\TestDirectory");
+                foreach (FileInfo file in di.GetFiles())
                 {
-                    case "Necessary1.txt":
-                        break;
-                    case "Necessary2.txt":
-                        break;
-                    case "Necessary3.txt":
-                        break;
-                    default:
-                        file.Delete();
-                        break;
-                }                    
+                    switch (file.Name)
+                    {
+                        case "Necessary1.txt":
+                            break;
+                        case "Necessary2.txt":
+                            break;
+                        case "Necessary3.txt":
+                            break;
+                        case "Kill Unnecessary Files!.exe":
+                            break;
+                        default:
+                            file.Delete();
+                            break;
+                    }
+                }
             }
+            
+            
         }
     }
 }

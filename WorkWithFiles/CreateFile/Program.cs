@@ -11,26 +11,33 @@ namespace CreateFile
     {
         public static void Main()
         {
-            Console.WriteLine("Enter new file name");
-            string fileName = Console.ReadLine();
-            string path = @"C:\Users\Tigran PC\Desktop\TestDirectory\" + fileName+".txt";
+            string fileName;
+            string path;
 
             try
             {
-
-                // Delete the file if it exists.
-                if (File.Exists(path))
+                do
                 {
-                    File.Delete(path);
-                }
+                    Console.WriteLine("Enter new file name -");
+                    fileName = Console.ReadLine();
+                    path = @"C:\Users\Tigran PC\Desktop\TestDirectory\" + fileName + ".txt";
+                    if (File.Exists(path))
+                    {
+                        Console.WriteLine("The file with such a name is already exist, Do You wont to Replace it? ");
+                        string key = Console.ReadLine();
+                        if (key == "Yes")
+                        {
+                            File.Delete(path);
+                        }
+                    }
+                    
+                } while (File.Exists(path));
 
                 // Create the file.
                 FileStream fs = File.Create(path);     
                 Byte[] info = new UTF8Encoding(true).GetBytes("Some text");
                 // Add some information to the file.
                 fs.Write(info, 0, info.Length);
-
-
                              
             }
 

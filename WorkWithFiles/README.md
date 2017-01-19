@@ -1,1 +1,5 @@
-![unnesfiles](https://cloud.githubusercontent.com/assets/24522089/22084673/6f97a6c4-ddea-11e6-83b5-aec889bd51f7.gif)
+# Working with files (Create new, Edit, Delete, Clean Directory)(Exception Handling)
+![workwithfile](https://cloud.githubusercontent.com/assets/24522089/22097767/39487e52-de3c-11e6-94a9-ecbecbe5d40c.gif)
+
+### In this project about **52%** of code is for exeption handling
+> Project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

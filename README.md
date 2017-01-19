@@ -15,6 +15,8 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 7. [3D Geometric Shapes (Example of using Interfacies)] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D)
 
+8. [Working with files (Create new, Edit, Delete)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
+
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 
 : <img src="https://cloud.githubusercontent.com/assets/24522089/21958536/0aed1ce0-daca-11e6-859f-7a06d6f74b8f.gif" align="middle" width="500px" height="300px" /> 

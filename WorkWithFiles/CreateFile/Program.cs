@@ -9,7 +9,6 @@ namespace CreateFile
         {
             string fileName;
             string path;
-
             try
             {
                 do
@@ -44,12 +43,10 @@ namespace CreateFile
                 Console.WriteLine(textline);
                 sr.Close();
             }
-
             catch (Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
-
             Console.ReadKey();
         }
     }

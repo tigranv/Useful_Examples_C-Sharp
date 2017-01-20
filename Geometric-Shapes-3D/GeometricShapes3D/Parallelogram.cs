@@ -3,7 +3,7 @@ using System;
 
 namespace GeometricShapes3D
 {
-    public class Parallelepiped : Shape3D 
+    public class Parallelepiped : Shape3D , IChangeable
     {
         public Parallelepiped(Point3D location, float a, float b, float c, float angle) : base(location)
         {
@@ -65,7 +65,12 @@ namespace GeometricShapes3D
             }
         }
 
-        
+        public void ChangeSizeies(float a, float b, float c)
+        {
+            A = a;
+            B = b;
+            C = c;
+        }
     }
 
 }

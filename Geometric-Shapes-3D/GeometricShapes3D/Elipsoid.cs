@@ -2,7 +2,7 @@
 
 namespace GeometricShapes3D
 {
-    public class Ellipsoid : Shape3D
+    public class Ellipsoid : Shape3D, IChangeable
     {
         //constructor
         public Ellipsoid(Point3D location, float a, float b, float c) : base(location)
@@ -32,6 +32,13 @@ namespace GeometricShapes3D
             {
                 return 4 / 3 * (float)(Math.PI * R1 * R2 * R3);
             }
+        }
+
+        public void ChangeSizeies(float a, float b, float c)
+        {
+            A = a;
+            B = b;
+            C = c;
         }
     }
 }

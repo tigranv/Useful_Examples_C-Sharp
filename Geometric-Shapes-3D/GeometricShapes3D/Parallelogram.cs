@@ -3,24 +3,66 @@ using System;
 
 namespace GeometricShapes3D
 {
-    public class Parallelogram : Shape3D
+    public class Parallelepiped : Shape3D
     {
-        public Parallelogram(float x, float y, float z)
+        public Parallelepiped(Point3D location, float a, float b, float c, float angle) : base(location)
         {
-            if ((x <= 0) || (y <= 0) || (z <= 0)) { throw new ArgumentOutOfRangeException("Not real parameter"); }
-            base.x = x;
-            base.y = y;
-            base.z = z;
+            A = a;
+            B = b;
+            C = c;
+            smallAngle = AngleInPi(angle);
         }
 
-        public override float SurfaceArea()
+
+        //Lengths of  sides
+        protected float A;
+        protected float B;
+        protected float C;
+
+        //small  angle 
+        protected float smallAngle;
+
+
+        // overriding methods for area and volume
+        public override float SurfaceArea
         {
-            return 2 * (x * y + x * z + z * y);
+            get
+            {
+                return 2 * (A * C + A * B + B * C * (float)Math.Sin(smallAngle));
+            }
         }
 
-        public override float Volume()
+        public override float ShapeVolume
         {
-            return x * y * z;
+            get
+            {
+                return A * B * C * (float)Math.Sin(smallAngle);
+            }
+        }
+
+        
+        // Method for correct angle
+        private float AngleInPi(float angle)
+        {
+            float finalAngle;
+            if (angle >= 0)
+            {
+                finalAngle = angle % (float)(Math.PI * 2);
+
+                if (finalAngle > (float)Math.PI)
+                    return -(float)(Math.PI * 2) - finalAngle;
+                else
+                    return finalAngle;
+            }
+            else
+            {
+                finalAngle = angle % (float)(Math.PI * 2);
+
+                if (finalAngle < -(float)Math.PI)
+                    return (float)(Math.PI * 2) - (-finalAngle);
+                else
+                    return finalAngle;
+            }
         }
     }
 

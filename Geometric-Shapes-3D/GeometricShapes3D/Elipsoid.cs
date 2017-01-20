@@ -2,24 +2,40 @@
 
 namespace GeometricShapes3D
 {
-    public class Elipsoid : Shape3D
+    public class Ellipsoid : Shape3D
     {
-        public Elipsoid(float x, float y, float z)
+        //constructor
+        public Ellipsoid(Point3D location, float a, float b, float c) : base(location)
         {
-            if ((x <= 0) || (y <= 0) || (z <= 0)) { throw new ArgumentOutOfRangeException("Not real parameter"); }
-            base.x = x;
-            base.y = y;
-            base.z = z;
+            R1 = a;
+            R2 = b;
+            R3 = c;
         }
 
-        public override float SurfaceArea()
+        //Radiuses
+        protected float R1;
+        protected float R2;
+        protected float R3;
+
+        public override float SurfaceArea
         {
-            return (float)(4 * Math.PI * Math.Pow((Math.Pow(x * y, 1.6) + Math.Pow(x * z, 1.6) + Math.Pow(y * z, 1.6)) / 3, 1 / 1.6));
+            get
+            {
+                return (float)(4 * Math.PI * Math.Pow((Math.Pow(R1 * R2, 1.6) + Math.Pow(R1 * R3, 1.6) + Math.Pow(R2 * R3, 1.6)) / 3, 1 / 1.6));
+
+            }
         }
 
-        public override float Volume()
+        public override float ShapeVolume
         {
-            return 4 / 3 * (float)(Math.PI * x * y * z);
+            get
+            {
+                return 4 / 3 * (float)(Math.PI * R1 * R2 * R3);
+            }
         }
+
+        // Constructor
+
+
     }
 }

@@ -21,49 +21,54 @@ namespace Directory_Tree
                 string[] files = new DirectoryInfo(path1).GetFiles().Select(o => o.Name).ToArray();
                 int j = 0;
                 int longestFolder = (folders).Where(s => s.Length == folders.Max(m => m.Length)).First().Length;
-                int longestFle = (files).Where(s => s.Length == files.Max(m => m.Length)).First().Length;
-                int longestName = (longestFle>=longestFolder?longestFle:longestFolder)<20? (longestFle >= longestFolder ? longestFle : longestFolder):20;
+                //int longestFle = (files).Where(s => s.Length == files.Max(m => m.Length)).First().Length;
+                //int longestName = (longestFle>=longestFolder?longestFle:longestFolder)<25? (longestFle >= longestFolder ? longestFle : longestFolder):20;
+                int longestName = longestFolder; //longestFolder <= 25 ? longestFolder : 26;
 
                 foreach (string name in folders)
                 {
                     if (name != directories[i + 1])
                     {
                         Console.SetCursorPosition(cursorLeft + i, cursorUp + j);
-                        if(name.Length <= 20) Console.WriteLine("+" + name);
-                        else Console.WriteLine("Too long name");
+                        Console.WriteLine("+" + name);
                         j++;
                     }
                     else
                     {
+                        
+
                         if (i != directories.Length - 2)
                         {
                             Console.SetCursorPosition(cursorLeft + i, cursorUp + j);
-                            Console.WriteLine("-" + name + new string('_', longestName - directories[i + 1].Length) + "\u261B");
+                            Console.WriteLine("-" + name + new string('-', longestName + 3 - directories[i + 1].Length) + "\u261B");
                             j++;
                         }
                         else
                         {
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.SetCursorPosition(cursorLeft + i, cursorUp + j);
-                            Console.WriteLine(name);
+                            Console.WriteLine("***"+name+"***");
+                            Console.ForegroundColor = ConsoleColor.Gray;
+                            j++;
                         }
-
                     }
                 }
 
-                foreach (string name in files)
-                {
-                    if (name.Length <= 20) Console.WriteLine("+" + name);
-                    else Console.WriteLine("Too long name");
-                    j++;
-                }
+                //foreach (string name in files)
+                //{
+                //    if (name.Length < longestName) Console.WriteLine("+" + name);
+                //    else Console.WriteLine("Too long name");
+                //    j++;
+                //}
                 cursorUp += Array.IndexOf(folders, directories[i + 1]) + 1;
-                cursorLeft += longestName + 1;
+                cursorLeft += longestName+3;
             }
+
         }
 
         static void Main(string[] args)
         {
-            DirectoryTree(@"C:\Users\Tigran PC\Desktop\TestDirectory");
+            DirectoryTree(@"C:\Program Files\HP\Documentation");
             Console.ReadKey();
         }
     }

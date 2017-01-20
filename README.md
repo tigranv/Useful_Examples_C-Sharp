@@ -18,6 +18,8 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 8. [Working with files (Create new, Edit, Clean Directory)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
 
+8. [Creating Directory Tree] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)
+
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 
 : <img src="https://cloud.githubusercontent.com/assets/24522089/21958536/0aed1ce0-daca-11e6-859f-7a06d6f74b8f.gif" align="middle" width="500px" height="300px" /> 

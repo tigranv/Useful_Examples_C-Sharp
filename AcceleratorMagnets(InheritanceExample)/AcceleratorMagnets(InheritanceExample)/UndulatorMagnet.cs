@@ -20,12 +20,9 @@ namespace AcceleratorMagnets_InheritanceExample_
         private int NumberOfPeriods = 80;
 
         public void PlotTrajectory()
-        {
-            Console.WriteLine(new string('-', 40));
-            Console.ForegroundColor = ConsoleColor.Red;
+        {           
             Console.WriteLine("Trajectory function of undulator with period length of {0}, and period numbers {1}", Periodlenght, NumberOfPeriods);
-            Console.WriteLine(new string('*', 40));
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine(new string('*', 70));
         }
     }
 

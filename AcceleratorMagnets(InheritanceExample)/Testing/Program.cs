@@ -11,8 +11,14 @@ namespace Testing
             BendingMagnet Bending = new BendingMagnet(1, Material.SCMagnets, 10, BendingRadius.weak, FieldDirection.Left);
             UndulatorMagnet Undulator = new UndulatorMagnet(1, Material.Ferromagnets, 15);
             // get information about magnets
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("------------- Bending Magnet --------------");
+            Console.ForegroundColor = ConsoleColor.Gray;
             Bending.GetInformation();
             Bending.PlotTrajectory();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("------------- Undulator Magnet --------------");
+            Console.ForegroundColor = ConsoleColor.Gray;
             Undulator.GetInformation();
             Undulator.PlotTrajectory();
             Console.ReadKey();

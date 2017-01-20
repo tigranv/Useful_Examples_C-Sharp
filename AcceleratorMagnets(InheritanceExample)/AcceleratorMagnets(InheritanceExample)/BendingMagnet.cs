@@ -23,9 +23,6 @@ namespace AcceleratorMagnets_InheritanceExample_
         // Method for geting trajectory 
         public void PlotTrajectory()
         {
-            Console.WriteLine(new string('-',40));
-            Console.ForegroundColor = ConsoleColor.Red;
-
             switch (beta)
                 {
                     case BendingRadius.weak:
@@ -46,8 +43,7 @@ namespace AcceleratorMagnets_InheritanceExample_
                     default:
                         break;
                 }
-            Console.WriteLine(new string('*', 40));
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine(new string('*', 70));
         }      
     }
 }

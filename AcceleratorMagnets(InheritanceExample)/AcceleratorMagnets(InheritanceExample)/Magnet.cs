@@ -2,7 +2,7 @@
 
 namespace AcceleratorMagnets_InheritanceExample_
 {
-    public class Magnet
+    public abstract class Magnet
     {
         // base class constructor
         public Magnet(float B, Material material, int GLenght)
@@ -13,10 +13,10 @@ namespace AcceleratorMagnets_InheritanceExample_
         }
 
         // main fields
-        protected float MagneticFieldStrenght;
         protected int GeometricalLenght;
         protected Material material;
         private float MagneticLenght { get { return GeometricalLenght * 0.9f; } }
+        protected float MagneticFieldStrenght;
 
         // method for printing core information about magnet
         public void GetInformation()

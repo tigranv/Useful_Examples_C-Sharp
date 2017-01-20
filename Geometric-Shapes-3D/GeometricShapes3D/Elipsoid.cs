@@ -2,7 +2,7 @@
 
 namespace GeometricShapes3D
 {
-    public class Ellipsoid : Shape3D, IMovable
+    public class Ellipsoid : Shape3D
     {
         //constructor
         public Ellipsoid(Point3D location, float a, float b, float c) : base(location)
@@ -32,17 +32,6 @@ namespace GeometricShapes3D
             {
                 return 4 / 3 * (float)(Math.PI * R1 * R2 * R3);
             }
-        }
-
-        public void MoveToPoint(Point3D p)
-        {
-            Location = p;
-        }
-
-        public void MoveTo(float x, float y, float z)
-        {
-            Point3D p = new Point3D(x, y, z);
-            Location = p;
         }
     }
 }

@@ -7,11 +7,15 @@ namespace Testing
     {
         static void Main(string[] args)
         {
-            Elipsoid elipsoid1 = new Elipsoid(3, 4, 8);
-            Parallelogram paralelogram = new Parallelogram(2, 7, 15);
+            Parallelepiped NewParalel = new Parallelepiped(new Point3D(0, 0, 0), 4, 7, 8, 40);
+            Ellipsoid NewEllips = new Ellipsoid(new Point3D(1, 2, 4), 5, 2, 7);
 
-            Console.WriteLine("Surface area of elipsoid is {0}, and volume is {1}", elipsoid1.SurfaceArea(), elipsoid1.Volume());
-            Console.WriteLine("Surface area of parallelogram is {0}, and volume is {1}", elipsoid1.SurfaceArea(), elipsoid1.Volume());
+
+            NewEllips.MoveToPoint(new Point3D(1, 1, 1));
+            NewParalel.MoveToPoint(new Point3D(1, 1, 1));
+
+            Console.WriteLine("Surface area of elipsoid is {0}, and volume is {1}", NewEllips.SurfaceArea, NewEllips.ShapeVolume);
+            Console.WriteLine("Surface area of parallelogram is {0}, and volume is {1}", NewParalel.SurfaceArea, NewParalel.ShapeVolume);
 
             Console.ReadKey();
         }

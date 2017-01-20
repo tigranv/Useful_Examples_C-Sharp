@@ -36,9 +36,9 @@ namespace GeometricShapes3D
 
         public void ChangeSizeies(float a, float b, float c)
         {
-            A = a;
-            B = b;
-            C = c;
+            R1 = a;
+            R2 = b;
+            R3 = c;
         }
     }
 }

@@ -16,7 +16,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 7. [Functions for converting 4 byte numbers to one int in binary] (https://github.com/tigranv/Useful-examples/tree/master/From4BytesToInt32Methods)
 
-8. [Working with files (Create new, Edit, Delete)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
+8. [Working with files (Create new, Edit, Clean Directory)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
 
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 

@@ -1,19 +1,20 @@
 # Useful Examples on C#  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="150px" height="150px" /> 
 In this repository, I gathered a lot of useful examples that I create while studying programming
 
-1. [Accelerator magnets(Inheritance Example)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))
+1. [Inheritance (Accelerator magnets)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))
 
-2. [Functions for converting 4 byte numbers to one int in binary] (https://github.com/tigranv/Useful-examples/tree/master/From4BytesToInt32Methods)
+2. [Interfacies (3D Geometric Shapes)] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D)
 
-3. [Working with Indexers(Program for constructing new Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
-4. [Fibonacci Calculator (Example of using indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
+3. [Working with Indexers(New Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
-5. [Converting Latin letters to Armenian (Example of using extention methods and dictionary)] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
+4. [Fibonacci Calculator (Example of using Indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
-6. [Vector Arithmetic (Example of Operator Overloading)] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
+5. [Using Extention methods and Dictionary (Converting Latin letters to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
 
-7. [3D Geometric Shapes (Example of using Interfacies)] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D)
+6. [Example of Operators Overloading (Vector Arithmetic)] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
+
+7. [Functions for converting 4 byte numbers to one int in binary] (https://github.com/tigranv/Useful-examples/tree/master/From4BytesToInt32Methods)
 
 8. [Working with files (Create new, Edit, Delete)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
 

@@ -6,9 +6,9 @@ namespace Directory_Tree
 {
     class Program
     {
-        public static void DirectoryPath(string path)
+        public static void DirectoryTree(string path)
         {
-
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             string[] directories = path.Split('\\');
             string path1 = "";
             int cursorUp = 0;
@@ -17,16 +17,20 @@ namespace Directory_Tree
             for (int i = 0; i < directories.Length - 1; i++)
             {
                 path1 += directories[i] + @"\";
-                string[] files = Directory.GetDirectories(path1).Select(Path.GetFileName).ToArray(); ;
+                string[] folders = Directory.GetDirectories(path1).Select(Path.GetFileName).ToArray();
+                string[] files = new DirectoryInfo(path1).GetFiles().Select(o => o.Name).ToArray();
                 int j = 0;
-                int longestfile = (files).Where(s => s.Length == files.Max(m => m.Length)).First().Length;
+                int longestFolder = (folders).Where(s => s.Length == folders.Max(m => m.Length)).First().Length;
+                int longestFle = (files).Where(s => s.Length == files.Max(m => m.Length)).First().Length;
+                int longestName = (longestFle>=longestFolder?longestFle:longestFolder)<20? (longestFle >= longestFolder ? longestFle : longestFolder):20;
 
-                foreach (string name in files)
+                foreach (string name in folders)
                 {
                     if (name != directories[i + 1])
                     {
                         Console.SetCursorPosition(cursorLeft + i, cursorUp + j);
-                        Console.WriteLine("+" + name);
+                        if(name.Length <= 20) Console.WriteLine("+" + name);
+                        else Console.WriteLine("Too long name");
                         j++;
                     }
                     else
@@ -34,7 +38,7 @@ namespace Directory_Tree
                         if (i != directories.Length - 2)
                         {
                             Console.SetCursorPosition(cursorLeft + i, cursorUp + j);
-                            Console.WriteLine("-" + name + new string('-', longestfile - directories[i + 1].Length) + ">");
+                            Console.WriteLine("-" + name + new string('_', longestName - directories[i + 1].Length) + "\u261B");
                             j++;
                         }
                         else
@@ -45,14 +49,21 @@ namespace Directory_Tree
 
                     }
                 }
-                cursorUp += Array.IndexOf(files, directories[i + 1]) + 1;
-                cursorLeft += longestfile + 1;
+
+                foreach (string name in files)
+                {
+                    if (name.Length <= 20) Console.WriteLine("+" + name);
+                    else Console.WriteLine("Too long name");
+                    j++;
+                }
+                cursorUp += Array.IndexOf(folders, directories[i + 1]) + 1;
+                cursorLeft += longestName + 1;
             }
         }
 
         static void Main(string[] args)
         {
-            DirectoryPath(@"C:\Users\Tigran PC\Desktop\C#\Books FP");
+            DirectoryTree(@"C:\Users\Tigran PC\Desktop\TestDirectory");
             Console.ReadKey();
         }
     }

@@ -1,4 +1,4 @@
-# Working with Interfacies 
+# Working with Indexers 
 
 Let's create new solar system using class **NewGalaxy**                 
 Select the galaxy, sun(from Galaxy and Sun enumerations) and the number of planets.

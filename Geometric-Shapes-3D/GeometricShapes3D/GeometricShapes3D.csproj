@@ -41,13 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Elipsoid.cs" />
-    <Compile Include="Enums.cs" />
     <Compile Include="IChangeable.cs" />
     <Compile Include="IMovable.cs" />
     <Compile Include="Parallelogram.cs" />
     <Compile Include="Point3D.cs" />
     <Compile Include="Shape3D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

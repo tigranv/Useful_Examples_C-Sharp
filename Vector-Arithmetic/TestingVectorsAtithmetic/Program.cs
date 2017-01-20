@@ -11,8 +11,13 @@ namespace TestingVectorsAtithmetic
     {
         static void Main(string[] args)
         {
-            Vector A = new Vector(new Point(1, 2), new Point(1, 2));
-            Vector A = new Vector(new Point(1, 2), new Point(1, 2));
+            Vector A = new Vector(5, 9);
+            Vector B = new Vector(8, 11);
+
+            Vector result = 2 * B + A * 7 - B;
+            Console.WriteLine("Length of new vector is (2 * B + A * 7 - B)  is equals to {0}", result.length);
+
+            Console.ReadKey();
         }
     }
 }

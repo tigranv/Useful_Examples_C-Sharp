@@ -2,13 +2,13 @@
 {
     public class Point
     {
-        public float X { get; set; }
-        public float Y { get; set; }
+        public double x { get; set; }
+        public double y { get; set; }
 
-        public Point(float x, float y)
+        public Point(double x, double y)
         {
-            X = x;
-            Y = y;
+            this.x = x;
+            this.y = y;
         }
     }
 }

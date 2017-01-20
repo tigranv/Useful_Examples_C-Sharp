@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Angle3D.cs" />
     <Compile Include="Elipsoid.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="IMovable.cs" />
@@ -48,7 +47,6 @@
     <Compile Include="Point3D.cs" />
     <Compile Include="Shape3D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ShapeMover.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,2 +1,2 @@
 ## Fibonacci calculator   
-Example of using indexer
+Simple example of using indexer

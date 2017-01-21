@@ -13,19 +13,16 @@ namespace Directory_Tree
             int cursorUp = 0;
             int cursorLeft = 0;
 
-            for (int i = 0; i < directories.Length - 1; i++)
+            for (int i = 0; i < directories.Length-1; i++)
             {
                 subPath += directories[i] + @"\";
                 DirectoryInfo directory = new DirectoryInfo(subPath);
                 var files = directory.GetFiles().Where(f => !f.Attributes.HasFlag(FileAttributes.Hidden)).Select(f => f.Name).ToArray();
-                var folders = directory.GetDirectories().Where(f => !f.Attributes.HasFlag(FileAttributes.Hidden)).Select(f => f.Name).ToArray();
-
-                //string folders = Directory.GetDirectories(subPath).Select(Path.GetFileName).ToArray();
-                //string[] files = dir.GetFiles().Select(o => o.Name).ToArray();
-                int j = 0;
-                int longestFolder = (folders).Where(s => s.Length == folders.Max(m => m.Length)).First().Length;
+                var folders = directory.GetDirectories().Where(f => !f.Attributes.HasFlag(FileAttributes.Hidden)).Select(f => f.Name).ToArray();             
+                int longestFolder = folders.Length != 0 ? (folders).Where(s => s.Length == folders.Max(m => m.Length)).First().Length:0;
                 int longestFle = files.Length != 0? (files).Where(s => s.Length == files.Max(m => m.Length)).First().Length : 0;
-                int longestName = (longestFolder <= longestFle ? longestFle:longestFolder)<=25? (longestFolder <= longestFle ? longestFle : longestFolder) : 26;
+                int longestName =3 + (longestFolder <= longestFle ? longestFle:longestFolder)<=25? (longestFolder <= longestFle ? longestFle : longestFolder) : 26;
+                int j = 0;
 
                 for (int k = 0; k < folders.Length; k++)
                 {
@@ -44,7 +41,7 @@ namespace Directory_Tree
                         if (i != directories.Length - 2)
                         {
                             Console.SetCursorPosition(cursorLeft, cursorUp + j);
-                            Console.WriteLine("-" + folders[k] + new string('-', longestName - directories[i + 1].Length) + "\u261B");
+                            Console.WriteLine("-" + folders[k] + new string('-', longestName - directories[i + 1].Length) + "--\u261B");
                             j++;
                         }
                         else
@@ -66,7 +63,7 @@ namespace Directory_Tree
                     j++;
                 }
 
-                cursorUp += Array.IndexOf(folders, directories[i + 1]) + 1;
+                cursorUp += Array.IndexOf(folders, directories[i+1]) + 1;
                 cursorLeft += longestName+3;
             }
 
@@ -75,7 +72,7 @@ namespace Directory_Tree
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            DirectoryTree(@"C:\Program Files\HP\Documentation");
+            DirectoryTree(@"F:\BetConstract Internship\Lessons\BetLesson1\BetLesson1\bin");
             Console.ReadKey();
         }
     }

@@ -16,8 +16,12 @@ namespace Directory_Tree
             for (int i = 0; i < directories.Length - 1; i++)
             {
                 subPath += directories[i] + @"\";
-                string[] folders = Directory.GetDirectories(subPath).Select(Path.GetFileName).ToArray();
-                string[] files = new DirectoryInfo(subPath).GetFiles().Select(o => o.Name).ToArray();
+                DirectoryInfo dir = new DirectoryInfo(subPath);
+                //var files = directory.GetFiles().Where(f => !f.Attributes.HasFlag(FileAttributes.Hidden)).ToArray();
+                //var folders = directory.GetDirectories().Where(f => !f.Attributes.HasFlag(FileAttributes.Hidden)).ToArray();
+
+                var folders = Directory.GetDirectories(subPath).Select(Path.GetFileName).ToArray();
+                string[] files = dir.GetFiles().Select(o => o.Name).ToArray();
                 int j = 0;
                 // int longestFolder = (folders).Where(s => s.Length == folders.Max(m => m.Length)).First().Length;
                 // int longestFle = (files).Where(s => s.Length == files.Max(m => m.Length)).First().Length;

@@ -36,8 +36,6 @@ namespace Directory_Tree
                     }
                     else
                     {
-                        
-
                         if (i != directories.Length - 2)
                         {
                             Console.SetCursorPosition(cursorLeft, cursorUp + j);
@@ -66,7 +64,6 @@ namespace Directory_Tree
                 cursorUp += Array.IndexOf(folders, directories[i+1]) + 1;
                 cursorLeft += longestName+3;
             }
-
         }
 
         static void Main(string[] args)

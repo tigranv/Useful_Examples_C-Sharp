@@ -8,7 +8,6 @@ namespace Directory_Tree
     {
         public static void DirectoryTree(string path)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
             string[] directories = path.Split('\\');
             string path1 = "";
             int cursorUp = 0;
@@ -27,6 +26,7 @@ namespace Directory_Tree
 
                 foreach (string name in folders)
                 {
+                    
                     if (name != directories[i + 1])
                     {
                         Console.SetCursorPosition(cursorLeft + i, cursorUp + j);
@@ -68,6 +68,7 @@ namespace Directory_Tree
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             DirectoryTree(@"C:\Program Files\HP\Documentation");
             Console.ReadKey();
         }

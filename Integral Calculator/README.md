@@ -52,5 +52,49 @@ namespace Integral_Calculator
 
 ![integration1](https://cloud.githubusercontent.com/assets/24522089/22184491/f048c876-e0eb-11e6-8795-24f47406c05f.PNG)
 
+> The Code for Integral Calculation is
+
+```c#
+public class MathFunctions
+{
+    // Function for integral calculation , which takes delegate as argument
+    public static double Integrate(MyDelegate f, double x1, double x2, Integration_Accuracy a)
+    {
+        int accuracy = 0;
+        switch (a)
+        {
+            case Integration_Accuracy.Accuracy1:
+                accuracy = 10;
+                break;
+            case Integration_Accuracy.Accuracy2:
+                accuracy = 100;
+                break;
+            case Integration_Accuracy.Accuracy3:
+                accuracy = 10000;
+                break;
+            case Integration_Accuracy.Accuracy4:
+                accuracy = 1000000;
+                break;
+        }
+
+        double h = (x2 - x1) / accuracy;
+        double res = (f(x1) + f(x2)) / 2;
+        for (int i = 1; i < accuracy; i++)
+        {
+            res += f(x1 + i * h);
+        }
+        return h * res;
+    }
+}
+
+public enum Integration_Accuracy
+{
+    Accuracy1,
+    Accuracy2,
+    Accuracy3,
+    Accuracy4,
+}
+```
+
 
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

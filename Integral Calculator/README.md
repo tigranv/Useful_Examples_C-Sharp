@@ -48,11 +48,11 @@ namespace Integral_Calculator
 
 ![blog_073013_02](https://cloud.githubusercontent.com/assets/24522089/22183885/a4bdbd58-e0e1-11e6-972a-f62e4413492c.jpg)
 
-## The output is
+### The output is
 
 ![integration1](https://cloud.githubusercontent.com/assets/24522089/22184491/f048c876-e0eb-11e6-8795-24f47406c05f.PNG)
 
-> The Code for Integral Calculation is (You can use it to calculate the integral of any  function(infinite))
+## The Code for Integral Calculation is (You can use it to calculate the integral of any  function(infinite))
 
 ```c#
 public class MathFunctions

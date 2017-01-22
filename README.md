@@ -18,7 +18,9 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 8. [Working with files (Create new, Edit, Clean Directory)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
 
-8. [Creating Directory Tree] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)
+9. [Creating Directory Tree] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)
+
+10. [Integral Calculator (Delegate)] (https://github.com/tigranv/Useful-examples/tree/master/Integral%20Calculator)
 
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 

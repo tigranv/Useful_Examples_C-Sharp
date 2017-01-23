@@ -52,7 +52,7 @@ namespace Integral_Calculator
 
 ![integration1](https://cloud.githubusercontent.com/assets/24522089/22184491/f048c876-e0eb-11e6-8795-24f47406c05f.PNG)
 
-## The Code for Integral Calculation (You can use it to calculate the integral of any  function(infinite))
+## The Code for Integral Calculation (You can use it to calculate the integral of any  function(continuously))
 
 ```c#
 public class MathFunctions

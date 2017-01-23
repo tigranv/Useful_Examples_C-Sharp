@@ -19,7 +19,9 @@ Example represents vectors and basic operations applyed on them. Project include
 
 **The oOutput is** 
 
-> Length of new vector is (2 * B + A * 7 - B)  is equals to 85.5862138431184
+* Length of new vector is (2 * B + A * 7 - B)  is equals to 85.5862138431184
+
+> -------------------------------------------------------------------------------------
 
 
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

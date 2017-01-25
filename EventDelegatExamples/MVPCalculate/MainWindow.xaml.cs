@@ -10,7 +10,7 @@ namespace MVPCalculate
             InitializeComponent();
             new Presenter(this);
         }
-        # region События
+        # region Event
         private EventHandler addEvent = null;
         private EventHandler subEvent = null;
         private EventHandler mulEvent = null;
@@ -41,7 +41,7 @@ namespace MVPCalculate
         }
         #endregion
 
-        #region Вызов методов подписаных на события
+        #region Call methods
         private void CloseButtonClick(object sender, RoutedEventArgs e)
         {
             Close();

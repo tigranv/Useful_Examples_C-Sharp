@@ -2,7 +2,7 @@
 
 ### Stop Watch
 
-! [Stop Watch] (https://cloud.githubusercontent.com/assets/24522089/22300138/f914a546-e33f-11e6-9bd4-92c604e1805e.PNG)
+![Stop Watch](https://cloud.githubusercontent.com/assets/24522089/22300138/f914a546-e33f-11e6-9bd4-92c604e1805e.PNG)
 
 
 ### Calculator

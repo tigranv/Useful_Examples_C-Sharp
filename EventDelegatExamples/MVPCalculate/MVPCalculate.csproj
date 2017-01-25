@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A76FCACA-6234-4D93-AAB6-1203CAF8DA2A}</ProjectGuid>
+    <ProjectGuid>{5B0E56A5-AF1A-4356-AD04-1AB0274A56AE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MVPCalculate</RootNamespace>

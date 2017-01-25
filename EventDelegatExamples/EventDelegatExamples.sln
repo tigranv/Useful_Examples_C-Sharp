@@ -5,16 +5,18 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVP_StopWatch", "MVP_StopWatch\MVP_StopWatch.csproj", "{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVPCalculate", "MVPCalculate\MVPCalculate.csproj", "{5B0E56A5-AF1A-4356-AD04-1AB0274A56AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B9CC32FF-AF38-4E1C-A58D-AAA7FCEB36B9}.Release|Any CPU.ActiveCfg = Release|x86
+		{5B0E56A5-AF1A-4356-AD04-1AB0274A56AE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5B0E56A5-AF1A-4356-AD04-1AB0274A56AE}.Release|Any CPU.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,7 @@
 
 ### Stop Watch
 
-![stopwatchdiagramm](https://cloud.githubusercontent.com/assets/24522089/22299576/1dff2fd6-e33e-11e6-9d57-3d0168f07c12.PNG)
+https://cloud.githubusercontent.com/assets/24522089/22300138/f914a546-e33f-11e6-9bd4-92c604e1805e.PNG
 
 
 ### Calculator

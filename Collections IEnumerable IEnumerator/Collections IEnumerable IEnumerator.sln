@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnEvenCollection", "ReturnEvenCollection\ReturnEvenCollection.csproj", "{7BAABB0F-D377-41FF-B7DF-0497A1C62B1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyList", "MyList\MyList.csproj", "{1782795C-8AD8-42F2-A3CC-9CF724C52750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7BAABB0F-D377-41FF-B7DF-0497A1C62B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BAABB0F-D377-41FF-B7DF-0497A1C62B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BAABB0F-D377-41FF-B7DF-0497A1C62B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1782795C-8AD8-42F2-A3CC-9CF724C52750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1782795C-8AD8-42F2-A3CC-9CF724C52750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1782795C-8AD8-42F2-A3CC-9CF724C52750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1782795C-8AD8-42F2-A3CC-9CF724C52750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

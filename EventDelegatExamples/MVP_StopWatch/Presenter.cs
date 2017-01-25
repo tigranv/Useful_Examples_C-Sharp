@@ -20,7 +20,7 @@ namespace MVP_StopWatch
 
         }
 
-        #region Обработчики событий
+        #region Event handler
         void ViewReset(object sender, EventArgs e)
         {
             view.timer1.Stop();

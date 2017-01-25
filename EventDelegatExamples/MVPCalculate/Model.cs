@@ -2,7 +2,7 @@
 {
     class Model
     {
-        #region Методы арифметических операций
+        #region Arithmetic operators
         public string Add(int a, int b)
        {
            return (a+b).ToString();
@@ -19,7 +19,7 @@
         {
             if (b != 0)
                 return ((double) a/b).ToString();
-            return "На нуль делить нельзя";
+            return "Null division exeption";
         }
         #endregion
     }

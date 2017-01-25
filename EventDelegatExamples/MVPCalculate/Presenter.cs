@@ -17,7 +17,7 @@ namespace MVPCalculate
             this.mainWindow.DivEvent += MainWindowDiv;
         }
 
-        #region Методы-обработчики событий
+        #region Event handler 
         void MainWindowAdd(object sender, EventArgs e)
         {
             string variable = model.Add(Convert.ToInt32(mainWindow.Operand1_textBox.Text),

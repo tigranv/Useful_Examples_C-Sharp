@@ -61,5 +61,27 @@ class Program
 }
 ```
 
+### [GetArrayExtentiony] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator/GetArrayExtention) is extention method for IEnumerable<T>, that converts list to array.
+
+> Example of using
+
+```c#
+static void Main()
+{
+
+    MyList<int> list = new MyList<int>();
+
+    for (int i = 0; i < 8; i++)
+        list.Add(i);
+
+    int[] arr = list.GetArray();
+
+    foreach (int t in arr)
+        Console.Write("{0}  ", t);
+
+    // Delay.
+    Console.ReadKey();
+}
+```
 
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

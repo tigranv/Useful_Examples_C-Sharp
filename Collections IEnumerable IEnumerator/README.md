@@ -61,7 +61,7 @@ class Program
 }
 ```
 
-### [GetArrayExtentiony] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator/GetArrayExtention) is extention method for IEnumerable<T>, that converts list to array.
+### [GetArrayExtention] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator/GetArrayExtention) is extention method for IEnumerable<T>, that converts list to array.
 
 > Example of using
 

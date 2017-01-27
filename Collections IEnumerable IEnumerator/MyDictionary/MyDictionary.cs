@@ -15,12 +15,10 @@ namespace MyDictionary
 
         int position = -1;
 
-        # region Свойство длинны коллекции
         public int Lenght
         {
             get { return lenght; }
         }
-        #endregion
 
         #region constructor
         public MyDictionary(int n)

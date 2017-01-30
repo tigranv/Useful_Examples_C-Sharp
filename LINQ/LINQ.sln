@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Join Keyword", "Join Keywor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Let Keyword", "Let Keyword\Let Keyword.csproj", "{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Group Keyword", "Group Keyword\Group Keyword.csproj", "{064DA4D6-EF7E-48B8-8816-6563EB629114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064DA4D6-EF7E-48B8-8816-6563EB629114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064DA4D6-EF7E-48B8-8816-6563EB629114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064DA4D6-EF7E-48B8-8816-6563EB629114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064DA4D6-EF7E-48B8-8816-6563EB629114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

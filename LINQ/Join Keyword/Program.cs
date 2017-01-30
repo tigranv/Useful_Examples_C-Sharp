@@ -44,7 +44,7 @@ namespace Join_Keyword
             var query = from emp in employees
                         join n in empNationalities
                         on emp.Id equals n.Id
-                        orderby n.Nationality descending 
+                        orderby n.Nationality descending // sorting
                         select new
                         {
                             Id = emp.Id,

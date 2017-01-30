@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "How LINQ Works", "How LINQ 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Join Keyword", "Join Keyword\Join Keyword.csproj", "{17D8CB76-B393-4344-835B-968C68D37288}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Let Keyword", "Let Keyword\Let Keyword.csproj", "{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{17D8CB76-B393-4344-835B-968C68D37288}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17D8CB76-B393-4344-835B-968C68D37288}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17D8CB76-B393-4344-835B-968C68D37288}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED985C09-C6B5-4E3C-A20E-A6ED93A422F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

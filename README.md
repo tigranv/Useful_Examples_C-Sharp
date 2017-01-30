@@ -23,6 +23,11 @@ In this repository, I gathered a lot of useful examples that I create while stud
 10. [Integral Calculator (Delegate)] (https://github.com/tigranv/Useful-examples/tree/master/Integral%20Calculator)
 
 11. [Events, working with WPF Buttons] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
+
+12. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
+
+
+
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 
 

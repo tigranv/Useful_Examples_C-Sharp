@@ -7,7 +7,7 @@
 
 3. [Join Keyword] (https://github.com/tigranv/Useful-examples/tree/master/LINQ/Join%20Keyword)
 
-4. [Inherita)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample))
+4. [Let Keyword] (https://github.com/tigranv/Useful-examples/tree/master/LINQ/Let%20Keyword)
 
 
 

@@ -46,15 +46,36 @@ namespace How_LINQ_Works
 
             // LINQ 
             var query = // query - var 
-                        employees
-                        .Where(emp => emp.Salary > 100000)
-                        .OrderBy(emp => emp.LastName)
-                        .OrderBy(emp => emp.FirstName)
-                        .Select(emp => new
-                        {
-                            LastName = emp.LastName,
-                            FirstName = emp.FirstName
-                        });
+                       from employee in employees // from - call var from employee.
+                       where employee.Salary > 400000 // where - filtering
+                       orderby employee.LastName, employee.FirstName
+                       select new 
+                       {
+                           LastName = employee.LastName,
+                           FirstName = employee.FirstName
+                       };
+
+            // How it works with functions chains
+            //employees
+            //.Where(emp => emp.Salary > 400000)
+            //.OrderBy(emp => emp.LastName)
+            //.OrderBy(emp => emp.FirstName)
+            //.Select(emp => new
+            //{
+            //    LastName = emp.LastName,
+            //    FirstName = emp.FirstName
+            //});
+
+            // How it works with static methods
+            //var query = // query - переменная запрса.
+            //    Enumerable.Select(
+            //    Enumerable.OrderBy(
+            //    Enumerable.OrderBy(
+            //    Enumerable.Where(
+            //    employees, emp => emp.Salary > 100000),
+            //    emp => emp.LastName),
+            //    emp => emp.FirstName),
+            //    emp => new { LastName = emp.LastName, FirstName = emp.FirstName });
 
             Console.WriteLine("Best salary");
 

@@ -19,7 +19,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 8. [Working with files (Create new, Edit, Clean Directory)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles)
 
-9. [Creating Directory Tree] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="300px" height="150px" />
+9. [Creating Directory Tree] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="400px" height="120px" />
 
 10. [Integral Calculator (Delegate)] (https://github.com/tigranv/Useful-examples/tree/master/Integral%20Calculator)
 

@@ -15,10 +15,10 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 7. [Functions for converting 4 byte numbers to one int in binary] (https://github.com/tigranv/Useful-examples/tree/master/From4BytesToInt32Methods)
 
-8. [Working with files (Create new, Edit, Clean Directory)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles) <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="400px" height="120px" />
+8. [Working with files (Clean Directory)(Exception Handling)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles) <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="400px" height="120px" />
 
 
-9. [Creating Directory Tree ----------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  
+9. [Creating Directory Tree ------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  
 10. [Integral Calculator (Delegate)] (https://github.com/tigranv/Useful-examples/tree/master/Integral%20Calculator)
 
 11. [Events, working with WPF Buttons] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)

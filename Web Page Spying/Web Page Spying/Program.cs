@@ -19,8 +19,7 @@ namespace Web_Page_Spying
             List<string> URLs = WebSpyer.FindeURLs();
             WebSpyer.SaveURLsToDoc(url, @"C: \Users\Tigran PC\Desktop\URLs.txt");
             WebSpyer.SaveWebContentToDoc(url, @"C: \Users\Tigran PC\Desktop\WebContent.txt");
-
-            
+         
             Console.ReadKey();
 
         }

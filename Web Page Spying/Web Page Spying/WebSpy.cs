@@ -44,7 +44,7 @@ namespace Web_Page_Spying
             return URLs;
         }
 
-
+        // saves urls to txt file
         public void SaveURLsToDoc(string url, string path)
         {
             List<string> urlLists = FindeURLs();
@@ -57,6 +57,7 @@ namespace Web_Page_Spying
             writer.Close();    
         }
 
+        // saves web constent  to txt file and cleans html tags
         public void SaveWebContentToDoc(string url, string OutputFileName)
         {
             StreamWriter writer1 = new StreamWriter(@"C: \Users\Tigran PC\Desktop\htmlfile.txt");
@@ -94,9 +95,7 @@ namespace Web_Page_Spying
         }
 
 
-        /// <summary>Removes the tags from a HTML text</summary>
-        /// <param name="reader">Input text</param>
-        /// <param name="writer">Output text (result)</param>
+        //Removes the tags from a HTML text</summary>
         private static void RemoveHtmlTags(
         StreamReader reader, StreamWriter writer)
         {
@@ -135,10 +134,8 @@ namespace Web_Page_Spying
                 }
             }
         }
-        /// <summary>Removes the whitespace and prints the buffer
-        /// in a file</summary>
-        /// <param name="writer">the result file</param>
-        /// <param name="buffer">the input for processing</param>
+
+        //Removes the whitespace and prints the buffer in a file
         private static void PrintBuffer(
         StreamWriter writer, StringBuilder buffer)
         {

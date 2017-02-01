@@ -34,6 +34,7 @@ namespace Web_Page_Spying
             //clean web content from html tags and write in txt
             WebSpyer.SaveWebContentToDoc(path2);
 
+            Console.ReadKey();
         }
 
 

@@ -65,7 +65,7 @@ namespace Web_Page_Spying
             }
             catch (IOException)
             {
-                Console.WriteLine("Cannot read file ");
+                Console.WriteLine("Cannot write file ");
             }
             finally
             {
@@ -118,7 +118,7 @@ namespace Web_Page_Spying
         }
 
         //Removes the whitespace and prints the buffer in a file
-        private static void PrintBuffer(StreamWriter writer, StringBuilder buffer)
+        private void PrintBuffer(StreamWriter writer, StringBuilder buffer)
         {
             Regex regexWhitespace = new Regex("\n\\s+");
             string str = buffer.ToString();

@@ -1,6 +1,6 @@
 # Working with Garbage Collector, and IDisposable  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="150px" height="150px" /> 
 
-### Nine Lives of a Cat is a demonstration of Object Resurrection using GC.ReRegisterForFinalize
+> **Nine Lives of a Cat** is a demonstration of Object Resurrection using GC.ReRegisterForFinalize
 
 ```c#
     class Cat

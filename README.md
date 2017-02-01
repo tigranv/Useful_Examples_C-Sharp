@@ -3,13 +3,13 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 1. [Inheritance (Accelerator magnets)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample)) 
 
-2. [Interfacies (3D Geometric Shapes) -------------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D) <img src="https://cloud.githubusercontent.com/assets/24522089/22154134/c4504766-df43-11e6-8bf0-20dd4449a48d.PNG" align="right" width="300px" height="150px" />
+2. [Interfacies (3D Geometric Shapes) ------------------------------------>] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D) <img src="https://cloud.githubusercontent.com/assets/24522089/22154134/c4504766-df43-11e6-8bf0-20dd4449a48d.PNG" align="right" width="400px" height="150px" />
 
 3. [Working with Indexers(New Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
 4. [Fibonacci Calculator (Example of using Indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
-5. [Extention methods and Dictionary (Converting Latin letters to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
+5. [Extention methods and Dictionary (Latin letters to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
 
 6. [Example of Operators Overloading (Vector Arithmetic)] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
 

@@ -31,14 +31,15 @@ In this repository, I gathered a lot of useful examples that I create while stud
 14. [Garbage Collector] (https://github.com/tigranv/Useful-examples/tree/master/Garbage%20Collector)
 
 
-15. [Web Page Spying-------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Web%20Page%20Spying)
+15. [Web Page Spying------------------------------------------>] (https://github.com/tigranv/Useful-examples/tree/master/Web%20Page%20Spying)
 
 
 
 
 
->
-> 
+<br>
+<br>
+<br>
 
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 

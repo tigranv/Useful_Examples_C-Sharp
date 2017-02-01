@@ -30,9 +30,9 @@ namespace Web_Page_Spying
             }
 
             // write urls in txt
-            WebSpyer.SaveURLsToDoc(url, path1);
+            WebSpyer.SaveURLsToDoc(path1);
             //clean web content from html tags and write in txt
-            WebSpyer.SaveWebContentToDoc(url, path2);
+            WebSpyer.SaveWebContentToDoc(path2);
 
         }
 

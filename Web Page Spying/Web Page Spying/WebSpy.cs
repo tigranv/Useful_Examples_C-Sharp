@@ -12,7 +12,6 @@ namespace Web_Page_Spying
     public class WebSpy : IDisposable
     {
         WebClient client;
-        StreamReader reader = null;
         StreamWriter writer = null;
         private string html { get; set; }
 
@@ -43,7 +42,7 @@ namespace Web_Page_Spying
         }
 
         // saves urls to txt file
-        public void SaveURLsToDoc(string url, string path)
+        public void SaveURLsToDoc(string path)
         {
             List<string> urlLists = FindeURLs();
             writer = new StreamWriter(path);
@@ -56,54 +55,37 @@ namespace Web_Page_Spying
         }
 
         // saves web constent  to txt file and cleans html tags
-        public void SaveWebContentToDoc(string url, string OutputFileName)
+        public void SaveWebContentToDoc(string OutputFileName)
         {
-            var desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            var path3 = Path.Combine(desktop, "htmlfile.txt");
-            StreamWriter writer1 = new StreamWriter(path3);
-            var uri = new Uri(url);
-            var htmlfile = client.DownloadString(uri);
-            writer1.Write(htmlfile);
-            writer1.Close();
-
-            string InputFileName = @"C: \Users\Tigran PC\Desktop\htmlfile.txt";
-
             try
             {
                 Encoding encoding = Encoding.GetEncoding("windows-1251");
-                reader = new StreamReader(InputFileName, encoding);
-                writer = new StreamWriter(OutputFileName, false,
-                encoding);
-                RemoveHtmlTags(reader, writer);
+                writer = new StreamWriter(OutputFileName, false, encoding);
+                RemoveHtmlTags(writer);
             }
             catch (IOException)
             {
-                Console.WriteLine(
-                "Cannot read file " + InputFileName + ".");
+                Console.WriteLine("Cannot read file ");
             }
             finally
             {
-                if (reader != null)
-                {
-                    reader.Close();
-                }
                 if (writer != null)
                 {
                     writer.Close();
                 }
-                File.Delete(path3);
             }
         }
 
 
         //Removes the tags from a HTML text</summary>
-        private static void RemoveHtmlTags(StreamReader reader, StreamWriter writer)
+        private void RemoveHtmlTags(StreamWriter writer)
         {
             StringBuilder buffer = new StringBuilder();
             bool inTag = false;
-            while (true)
+            
+            for(int i = 0; i < html.Length; i++)
             {
-                int nextChar = reader.Read();
+                int nextChar = html[i];
                 if (nextChar == -1)
                 {
                     // End of file reached

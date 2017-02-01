@@ -27,6 +27,10 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 13. [LINQ Introduction, Keywords] (https://github.com/tigranv/Useful-examples/tree/master/LINQ)
 
+14. [Garbage Collector] (https://github.com/tigranv/Useful-examples/tree/master/Garbage%20Collector)
+
+15. [Web Page Spying] (https://github.com/tigranv/Useful-examples/tree/master/Web%20Page%20Spying)
+
 
 
 

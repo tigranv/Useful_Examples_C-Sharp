@@ -23,11 +23,13 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 11. [Events, working with WPF Buttons] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
 
-12. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
+12. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator) <img src="https://cloud.githubusercontent.com/assets/24522089/22523957/afe45dee-e8da-11e6-9293-8c13de4fcc69.gif" align="right" width="400px" height="250px" />
 
-13. [LINQ Introduction, Keywords] (https://github.com/tigranv/Useful-examples/tree/master/LINQ) <img src="https://cloud.githubusercontent.com/assets/24522089/22523957/afe45dee-e8da-11e6-9293-8c13de4fcc69.gif" align="right" width="400px" height="250px" />
+13. [LINQ Introduction, Keywords] (https://github.com/tigranv/Useful-examples/tree/master/LINQ) 
+
 
 14. [Garbage Collector] (https://github.com/tigranv/Useful-examples/tree/master/Garbage%20Collector)
+
 
 15. [Web Page Spying-------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Web%20Page%20Spying)
 

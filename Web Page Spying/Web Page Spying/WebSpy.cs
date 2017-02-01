@@ -15,8 +15,6 @@ namespace Web_Page_Spying
         StreamReader reader = null;
         StreamWriter writer = null;
         private string html { get; set; }
-        private const string Charset = "windows-1251";
-        private static Regex regexWhitespace = new Regex("\n\\s+");
 
         public WebSpy(string url)
         {
@@ -69,9 +67,10 @@ namespace Web_Page_Spying
             writer1.Close();
 
             string InputFileName = @"C: \Users\Tigran PC\Desktop\htmlfile.txt";
+
             try
             {
-                Encoding encoding = Encoding.GetEncoding(Charset);
+                Encoding encoding = Encoding.GetEncoding("windows-1251");
                 reader = new StreamReader(InputFileName, encoding);
                 writer = new StreamWriter(OutputFileName, false,
                 encoding);
@@ -98,8 +97,7 @@ namespace Web_Page_Spying
 
 
         //Removes the tags from a HTML text</summary>
-        private static void RemoveHtmlTags(
-        StreamReader reader, StreamWriter writer)
+        private static void RemoveHtmlTags(StreamReader reader, StreamWriter writer)
         {
             StringBuilder buffer = new StringBuilder();
             bool inTag = false;
@@ -138,9 +136,9 @@ namespace Web_Page_Spying
         }
 
         //Removes the whitespace and prints the buffer in a file
-        private static void PrintBuffer(
-        StreamWriter writer, StringBuilder buffer)
+        private static void PrintBuffer(StreamWriter writer, StringBuilder buffer)
         {
+            Regex regexWhitespace = new Regex("\n\\s+");
             string str = buffer.ToString();
             string trimmed = str.Trim();
             string textOnly = regexWhitespace.Replace(trimmed, "\n");
@@ -149,11 +147,6 @@ namespace Web_Page_Spying
                 writer.WriteLine(textOnly);
             }
         }
-
-
-
-
-
 
 
         #region IDisposable Support

@@ -22,8 +22,16 @@ namespace Web_Page_Spying
 
             WebSpy WebSpyer = new WebSpy(url);
 
+            // write urls in console
             List<string> URLs = WebSpyer.FindeURLs();
+            foreach (var item in URLs)
+            {
+                Console.WriteLine(item);
+            }
+
+            // write urls in txt
             WebSpyer.SaveURLsToDoc(url, path1);
+            //clean web content from html tags and write in txt
             WebSpyer.SaveWebContentToDoc(url, path2);
 
         }

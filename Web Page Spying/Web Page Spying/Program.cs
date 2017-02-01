@@ -14,13 +14,13 @@ namespace Web_Page_Spying
         {
             string url = "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)";
 
-            
-            List<string> URLs = FindeURLs(html);
+            WebSpy WebSpyer = new WebSpy(url);
 
-            foreach (var item in URLs)
-            {
-                Console.WriteLine(item);
-            }
+            List<string> URLs = WebSpyer.FindeURLs();
+            WebSpyer.SaveURLsToDoc(url, @"C: \Users\Tigran PC\Desktop\URLs.txt");
+            WebSpyer.SaveWebContentToDoc(url, @"C: \Users\Tigran PC\Desktop\WebContent.txt");
+
+            
             Console.ReadKey();
 
         }

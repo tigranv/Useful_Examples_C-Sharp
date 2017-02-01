@@ -60,7 +60,9 @@ namespace Web_Page_Spying
         // saves web constent  to txt file and cleans html tags
         public void SaveWebContentToDoc(string url, string OutputFileName)
         {
-            StreamWriter writer1 = new StreamWriter(@"C: \Users\Tigran PC\Desktop\htmlfile.txt");
+            var desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            var path3 = Path.Combine(desktop, "htmlfile.txt");
+            StreamWriter writer1 = new StreamWriter(path3);
             var uri = new Uri(url);
             var htmlfile = client.DownloadString(uri);
             writer1.Write(htmlfile);
@@ -90,7 +92,7 @@ namespace Web_Page_Spying
                 {
                     writer.Close();
                 }
-                File.Delete(@"C: \Users\Tigran PC\Desktop\htmlfile.txt");
+                File.Delete(path3);
             }
         }
 

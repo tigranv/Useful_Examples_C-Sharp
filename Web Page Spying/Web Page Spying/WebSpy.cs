@@ -65,7 +65,7 @@ namespace Web_Page_Spying
             }
             catch (IOException)
             {
-                Console.WriteLine("Cannot write file ");
+                Console.WriteLine("Cannot save file ");
             }
             finally
             {
@@ -77,7 +77,7 @@ namespace Web_Page_Spying
         }
 
 
-        //Removes the tags from a HTML text</summary>
+        //Removes the tags from a HTML text
         private void RemoveHtmlTags(StreamWriter writer)
         {
             StringBuilder buffer = new StringBuilder();

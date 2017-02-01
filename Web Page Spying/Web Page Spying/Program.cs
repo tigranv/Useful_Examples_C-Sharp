@@ -12,31 +12,21 @@ namespace Web_Page_Spying
     {
         static void Main(string[] args)
         {
-            string url = "http://www.micarmenia.am/";
+            string url = "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)";
 
-            WebClient client = new WebClient();
-            string html = client.DownloadString(url);
+            
+            List<string> URLs = FindeURLs(html);
 
-            FindHrefs(html);
-
-            Console.ReadKey();
-        }
-
-
-        private static void FindHrefs(string input)
-        {
-            Regex regex = new Regex("href\\s*=\\s*(?:\"(?<1>[^\"]*)\"|(?<1>\\S+))", RegexOptions.IgnoreCase);
-            Match match;
-            for (match = regex.Match(input); match.Success; match = match.NextMatch())
+            foreach (var item in URLs)
             {
-
-                foreach (Group group in match.Groups)
-                {
-                    Console.WriteLine(group);
-                }
+                Console.WriteLine(item);
             }
+            Console.ReadKey();
 
         }
+
+
+        
 
 
     }

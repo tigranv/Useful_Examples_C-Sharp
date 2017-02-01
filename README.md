@@ -3,13 +3,13 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 1. [Inheritance (Accelerator magnets)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample)) 
 
-2. [Interfacies (3D Geometric Shapes) -------------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D) <img src="https://cloud.githubusercontent.com/assets/24522089/22154134/c4504766-df43-11e6-8bf0-20dd4449a48d.PNG" align="right" width="300px" height="150px" />
+2. [Interfacies (3D Geometric Shapes) ---------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D) <img src="https://cloud.githubusercontent.com/assets/24522089/22154134/c4504766-df43-11e6-8bf0-20dd4449a48d.PNG" align="right" width="400px" height="150px" />
 
 3. [Working with Indexers(New Solar system)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
 4. [Fibonacci Calculator (Example of using Indexers)] (https://github.com/tigranv/Useful-examples/tree/master/FibonacciCalculator(Indexers%20example))
 
-5. [Extention methods and Dictionary (Converting Latin letters to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter))
+5. [Extention methods and Dictionary (Latin letters to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter)
 
 6. [Example of Operators Overloading (Vector Arithmetic)] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
 
@@ -25,16 +25,25 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 12. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
 
-13. [LINQ Introduction, Keywords] (https://github.com/tigranv/Useful-examples/tree/master/LINQ)
-
-14. [Garbage Collector] (https://github.com/tigranv/Useful-examples/tree/master/Garbage%20Collector)
-
-15. [Web Page Spying] (https://github.com/tigranv/Useful-examples/tree/master/Web%20Page%20Spying)
+13. [LINQ Introduction, Keywords] (https://github.com/tigranv/Useful-examples/tree/master/LINQ) 
 
 
+14. [Garbage Collector] (https://github.com/tigranv/Useful-examples/tree/master/Garbage%20Collector)  <img src="https://cloud.githubusercontent.com/assets/24522089/22523957/afe45dee-e8da-11e6-9293-8c13de4fcc69.gif" align="right" width="400px" height="220px" />
+
+
+15. [Web Page Spying (IDisposable, IO, Exaption Handling)----->] (https://github.com/tigranv/Useful-examples/tree/master/Web%20Page%20Spying)
 
 
 
+
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
 
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition
 

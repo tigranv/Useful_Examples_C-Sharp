@@ -13,22 +13,24 @@ namespace Web_Page_Spying
     {
         private WebClient client;
         private StreamWriter writer = null;
-        private string html { get; set; }
-        public List<string> URLs { get; set;  }
+        private string HtmlContent { get; set; }
+        private string url { get; set; }
+        public List<string> InnerURLs { get; set;  }
 
-        public WebSpy(string url)
+        public WebSpy(string inputUrl)
         {
+            url = inputUrl;
             client = new WebClient();
-            html = client.DownloadString(url);
-            URLs = new List<string>();
+            HtmlContent = client.DownloadString(url);
+            InnerURLs = new List<string>();
             Regex regExpression = new Regex("(?:href)=[\"|']?(.*?)[\"|'|>]+", RegexOptions.Singleline | RegexOptions.CultureInvariant);
-            if (regExpression.IsMatch(html))
+            if (regExpression.IsMatch(HtmlContent))
             {
                 string matchValue;
-                foreach (Match match in regExpression.Matches(html))
+                foreach (Match match in regExpression.Matches(HtmlContent))
                 {
                     matchValue = match.Groups[1].Value;
-                    URLs.Add(matchValue);
+                    InnerURLs.Add(matchValue);
                 }
             }
         }
@@ -39,7 +41,7 @@ namespace Web_Page_Spying
             try
             {
                 writer = new StreamWriter(OutputFileName);
-                foreach (var urls in URLs)
+                foreach (var urls in InnerURLs)
                 {
                     writer.WriteLine(urls);
                 }
@@ -60,17 +62,42 @@ namespace Web_Page_Spying
         //saves pictures
         public void SavePicturesToDoc(string OutputFileName)
         {
-            int i = 0;
             Directory.CreateDirectory(OutputFileName);
-            foreach (var urls in URLs)
+            var imageURLs = showMatch(HtmlContent, @"<(img)\b[^>]*>");      
+            string[] split = imageURLs.Split(new Char[] { '"', '?' });
+            int PictureNumber = 1;
+
+            foreach (var item in split)
             {
-                if (urls.EndsWith("jpg") && urls.StartsWith("http:"))// || urls.EndsWith("png") || urls.EndsWith("gif"))
+
+                if (item.Contains(".jpg"))
                 {
-                    Console.WriteLine(urls);
-                    client.DownloadFile(urls, OutputFileName + $@"\{i}.jpg");
-                    i++;
+                    client = new WebClient();
+                    Uri uri = new Uri(url + item);
+                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.jpg");
+                    PictureNumber++;
+                    Console.WriteLine(item);
+                }
+
+                if (item.Contains(".png"))
+                {
+                    client = new WebClient();
+                    Uri uri = new Uri(url + item);
+                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.png");
+                    PictureNumber++;
+                    Console.WriteLine(item);
+                }
+
+                if (item.Contains(".svg"))
+                {
+                    client = new WebClient();
+                    Uri uri = new Uri(url + item);
+                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.svg");
+                    PictureNumber++;
+                    Console.WriteLine(item);
                 }
             }
+
         }
 
         // saves web constent  to txt file and cleans html tags
@@ -102,9 +129,9 @@ namespace Web_Page_Spying
             StringBuilder buffer = new StringBuilder();
             bool inTag = false;
             
-            for(int i = 0; i < html.Length; i++)
+            for(int i = 0; i < HtmlContent.Length; i++)
             {
-                int nextChar = html[i];
+                int nextChar = HtmlContent[i];
                 if (nextChar == -1)
                 {
                     // End of file reached
@@ -149,6 +176,17 @@ namespace Web_Page_Spying
             }
         }
 
+        private string showMatch(string text, string expr)
+        {
+            MatchCollection mc = Regex.Matches(text, expr);
+            string result = "";
+            foreach (Match m in mc)
+            {
+                result += m.ToString() + "\n";
+            }
+            return result;
+        }
+
 
         #region IDisposable Support
         private bool disposedValue = false; // To detect redundant calls
@@ -190,18 +228,3 @@ namespace Web_Page_Spying
     }
 }
 
-
-//dipends on site this one can work better
-//Regex regex = new Regex(@"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?", RegexOptions.IgnoreCase); //@"\b(?:https?://|www\.)\S+\b"
-//Match match;
-//for (match = regex.Match(html); match.Success; match = match.NextMatch())
-//{
-
-//    foreach (Group group in match.Groups)
-//    {
-//        if (group.ToString().StartsWith("http") || group.ToString().Contains("@"))
-//        {
-//            URLs.Add(group.ToString());
-//        }
-//    }
-//}

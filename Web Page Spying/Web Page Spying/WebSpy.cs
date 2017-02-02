@@ -11,34 +11,16 @@ namespace Web_Page_Spying
 {
     public class WebSpy : IDisposable
     {
-        WebClient client;
-        StreamWriter writer = null;
+        private WebClient client;
+        private StreamWriter writer = null;
         private string html { get; set; }
+        public List<string> URLs { get; set;  }
 
         public WebSpy(string url)
         {
             client = new WebClient();
             html = client.DownloadString(url);
-        }
-
-        public List<string> FindeURLs()
-        {
-            List<string> URLs = new List<string>();
-            //Regex regex = new Regex(@"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?", RegexOptions.IgnoreCase); //@"\b(?:https?://|www\.)\S+\b"
-            //Match match;
-            //for (match = regex.Match(html); match.Success; match = match.NextMatch())
-            //{
-
-            //    foreach (Group group in match.Groups)
-            //    {
-            //        if (group.ToString().StartsWith("http") || group.ToString().Contains("@"))
-            //        {
-            //            URLs.Add(group.ToString());
-            //        }
-            //    }
-            //}
-
-            // it dipends on site but this one is working better
+            URLs = new List<string>();
             Regex regExpression = new Regex("(?:href)=[\"|']?(.*?)[\"|'|>]+", RegexOptions.Singleline | RegexOptions.CultureInvariant);
             if (regExpression.IsMatch(html))
             {
@@ -49,38 +31,47 @@ namespace Web_Page_Spying
                     URLs.Add(matchValue);
                 }
             }
-            return URLs;
         }
 
         // saves urls to txt file
         public void SaveURLsToDoc(string OutputFileName)
         {
-            List<string> urlLists = FindeURLs();
-            writer = new StreamWriter(OutputFileName);
-
-            foreach (var urls in urlLists)
+            try
             {
-                writer.WriteLine(urls);
+                writer = new StreamWriter(OutputFileName);
+                foreach (var urls in URLs)
+                {
+                    writer.WriteLine(urls);
+                }
             }
-            writer.Close();    
+            catch (IOException)
+            {
+                Console.WriteLine("Cannot save file ");
+            }
+            finally
+            {
+                if (writer != null)
+                {
+                    writer.Close();
+                }
+            }   
         }
 
-        // saves picture urls
-        //public void SavePicturesToDoc(string OutputFileName)
-        //{
-        //    int i = 0;
-        //    List<string> urlLists = FindeURLs();
-        //    Directory.CreateDirectory(OutputFileName);
-        //    foreach (var urls in urlLists)
-        //    {
-        //        if(urls.EndsWith("jpg") || urls.EndsWith("png") || urls.EndsWith("gif"))
-        //        {
-        //            var filename = OutputFileName + $@"\xyz.jpg";
-        //            client.DownloadFile(urls, @"C:\Users\Tigran PC\Desktop\picFiles\xyz.jpg");
-        //            i++;
-        //        }             
-        //    }
-        //}
+        //saves pictures
+        public void SavePicturesToDoc(string OutputFileName)
+        {
+            int i = 0;
+            Directory.CreateDirectory(OutputFileName);
+            foreach (var urls in URLs)
+            {
+                if (urls.EndsWith("jpg") && urls.StartsWith("http:"))// || urls.EndsWith("png") || urls.EndsWith("gif"))
+                {
+                    Console.WriteLine(urls);
+                    client.DownloadFile(urls, OutputFileName + $@"\{i}.jpg");
+                    i++;
+                }
+            }
+        }
 
         // saves web constent  to txt file and cleans html tags
         public void SaveWebContentToDoc(string OutputFileName)
@@ -198,3 +189,19 @@ namespace Web_Page_Spying
 
     }
 }
+
+
+//dipends on site this one can work better
+//Regex regex = new Regex(@"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?", RegexOptions.IgnoreCase); //@"\b(?:https?://|www\.)\S+\b"
+//Match match;
+//for (match = regex.Match(html); match.Success; match = match.NextMatch())
+//{
+
+//    foreach (Group group in match.Groups)
+//    {
+//        if (group.ToString().StartsWith("http") || group.ToString().Contains("@"))
+//        {
+//            URLs.Add(group.ToString());
+//        }
+//    }
+//}

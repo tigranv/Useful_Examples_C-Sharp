@@ -2,7 +2,7 @@
 
 ### Example of using  Exeption handling, IDisposable interface, IO
 
-The Class WebSpy provides an opportunity get all **URL**-s, from web page, and write them in txt document, and creats html document of url  **cleand from html tags**
+The Class WebSpy provides an opportunity to get all **URL**-s, from web page, and write them in txt document, creats document of content of web page  **cleand from html tags**, and dowloads all pictures to folder.
 
 
 ![webspy](https://cloud.githubusercontent.com/assets/24522089/22568638/04730a4e-e9ae-11e6-9c86-c977235a33bf.gif)

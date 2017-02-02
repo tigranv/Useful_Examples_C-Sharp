@@ -5,6 +5,6 @@
 The Class WebSpy provides an opportunity get all **URL**-s, from web page, and write them in txt document, and creats html document of url  **cleand from html tags**
 
 
-![webspy](https://cloud.githubusercontent.com/assets/24522089/22523957/afe45dee-e8da-11e6-9293-8c13de4fcc69.gif)
+![webspy](https://cloud.githubusercontent.com/assets/24522089/22568638/04730a4e-e9ae-11e6-9c86-c977235a33bf.gif)
 
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

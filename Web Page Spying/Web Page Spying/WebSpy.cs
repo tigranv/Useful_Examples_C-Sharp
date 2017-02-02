@@ -24,28 +24,39 @@ namespace Web_Page_Spying
         public List<string> FindeURLs()
         {
             List<string> URLs = new List<string>();
-            Regex regex = new Regex(@"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?", RegexOptions.IgnoreCase);
-            Match match;
-            for (match = regex.Match(html); match.Success; match = match.NextMatch())
+            //Regex regex = new Regex(@"http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?", RegexOptions.IgnoreCase); //@"\b(?:https?://|www\.)\S+\b"
+            //Match match;
+            //for (match = regex.Match(html); match.Success; match = match.NextMatch())
+            //{
+
+            //    foreach (Group group in match.Groups)
+            //    {
+            //        if (group.ToString().StartsWith("http") || group.ToString().Contains("@"))
+            //        {
+            //            URLs.Add(group.ToString());
+            //        }
+            //    }
+            //}
+
+            // it dipends on site but this one is working better
+            Regex regExpression = new Regex("(?:href)=[\"|']?(.*?)[\"|'|>]+", RegexOptions.Singleline | RegexOptions.CultureInvariant);
+            if (regExpression.IsMatch(html))
             {
-
-                foreach (Group group in match.Groups)
+                string matchValue;
+                foreach (Match match in regExpression.Matches(html))
                 {
-                    if (group.ToString().StartsWith("http") || group.ToString().Contains("@"))
-                    {
-                        URLs.Add(group.ToString());
-                    }
-
+                    matchValue = match.Groups[1].Value;
+                    URLs.Add(matchValue);
                 }
             }
             return URLs;
         }
 
         // saves urls to txt file
-        public void SaveURLsToDoc(string path)
+        public void SaveURLsToDoc(string OutputFileName)
         {
             List<string> urlLists = FindeURLs();
-            writer = new StreamWriter(path);
+            writer = new StreamWriter(OutputFileName);
 
             foreach (var urls in urlLists)
             {
@@ -53,6 +64,23 @@ namespace Web_Page_Spying
             }
             writer.Close();    
         }
+
+        // saves picture urls
+        //public void SavePicturesToDoc(string OutputFileName)
+        //{
+        //    int i = 0;
+        //    List<string> urlLists = FindeURLs();
+        //    Directory.CreateDirectory(OutputFileName);
+        //    foreach (var urls in urlLists)
+        //    {
+        //        if(urls.EndsWith("jpg") || urls.EndsWith("png") || urls.EndsWith("gif"))
+        //        {
+        //            var filename = OutputFileName + $@"\xyz.jpg";
+        //            client.DownloadFile(urls, @"C:\Users\Tigran PC\Desktop\picFiles\xyz.jpg");
+        //            i++;
+        //        }             
+        //    }
+        //}
 
         // saves web constent  to txt file and cleans html tags
         public void SaveWebContentToDoc(string OutputFileName)

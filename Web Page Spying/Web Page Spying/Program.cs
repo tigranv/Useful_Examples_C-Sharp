@@ -16,6 +16,7 @@ namespace Web_Page_Spying
             var desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             var path1 = Path.Combine(desktop, "URLs.txt");
             var path2 = Path.Combine(desktop, "WebContent.txt");
+            var path3 = Path.Combine(desktop, "picFiles");
             Console.WriteLine("Enter the url");
             string url = Console.ReadLine();
             //string url = "http://www.micarmenia.am/";
@@ -33,6 +34,9 @@ namespace Web_Page_Spying
             WebSpyer.SaveURLsToDoc(path1);
             //clean web content from html tags and write in txt
             WebSpyer.SaveWebContentToDoc(path2);
+            // write urls in txt
+            //WebSpyer.SavePicturesToDoc(path3);
+
 
             Console.ReadKey();
         }

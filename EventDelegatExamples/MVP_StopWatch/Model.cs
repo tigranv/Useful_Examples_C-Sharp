@@ -7,7 +7,7 @@
         public string Tick()
         {
             s++;
-            return s >= 60 ? (s/60) + " мин " + s%60 + " сек" : s.ToString();
+            return s >= 60 ? (s/60) + " min " + s%60 + " sec" : s.ToString();
         }
         public void Reset()
         {

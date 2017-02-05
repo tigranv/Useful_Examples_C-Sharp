@@ -11,13 +11,13 @@ namespace MVP_StopWatch
             new Presenter(this);
         }
 
-        #region Делегаты
+        #region Delegats
         private EventHandler start;
         private EventHandler stop;
         private EventHandler reset;
         #endregion
 
-        #region События
+        #region events
         public event EventHandler Start
         {
             add { start += value; }
@@ -37,7 +37,7 @@ namespace MVP_StopWatch
         }
         #endregion
 
-        #region Обработчики событий
+        #region event handlers
         private void StartButton_Click(object sender, EventArgs e)
         {
             start.Invoke(sender, e);

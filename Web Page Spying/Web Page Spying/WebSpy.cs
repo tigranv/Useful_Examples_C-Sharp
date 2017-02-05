@@ -59,46 +59,7 @@ namespace Web_Page_Spying
             }   
         }
 
-        //saves pictures
-        public void SavePicturesToDoc(string OutputFileName)
-        {
-            Directory.CreateDirectory(OutputFileName);
-            var imageURLs = showMatch(HtmlContent, @"<(img)\b[^>]*>");      
-            string[] split = imageURLs.Split(new Char[] { '"', '?' });
-            int PictureNumber = 1;
 
-            foreach (var item in split)
-            {
-
-                if (item.Contains(".jpg"))
-                {
-                    client = new WebClient();
-                    Uri uri = new Uri(url + item);
-                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.jpg");
-                    PictureNumber++;
-                    Console.WriteLine(item);
-                }
-
-                if (item.Contains(".png"))
-                {
-                    client = new WebClient();
-                    Uri uri = new Uri(url + item);
-                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.png");
-                    PictureNumber++;
-                    Console.WriteLine(item);
-                }
-
-                if (item.Contains(".svg"))
-                {
-                    client = new WebClient();
-                    Uri uri = new Uri(url + item);
-                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.svg");
-                    PictureNumber++;
-                    Console.WriteLine(item);
-                }
-            }
-
-        }
 
         // saves web constent  to txt file and cleans html tags
         public void SaveWebContentToDoc(string OutputFileName)
@@ -176,6 +137,46 @@ namespace Web_Page_Spying
             }
         }
 
+        //saves pictures
+        public void SavePicturesToDoc(string OutputFileName)
+        {
+            Directory.CreateDirectory(OutputFileName);
+            var imageURLs = showMatch(HtmlContent, @"<(img)\b[^>]*>");      
+            string[] split = imageURLs.Split(new Char[] { '"', '?' });
+            int PictureNumber = 1;
+
+            foreach (var item in split)
+            {
+
+                if (item.Contains(".jpg"))
+                {
+                    client = new WebClient();
+                    Uri uri = new Uri(url + item);
+                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.jpg");
+                    PictureNumber++;
+                    Console.WriteLine(item);
+                }
+
+                if (item.Contains(".png"))
+                {
+                    client = new WebClient();
+                    Uri uri = new Uri(url + item);
+                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.png");
+                    PictureNumber++;
+                    Console.WriteLine(item);
+                }
+
+                if (item.Contains(".svg"))
+                {
+                    client = new WebClient();
+                    Uri uri = new Uri(url + item);
+                    client.DownloadFileAsync(uri, $"{OutputFileName}\\Picture{PictureNumber}.svg");
+                    PictureNumber++;
+                    Console.WriteLine(item);
+                }
+            }
+
+        }
         private string showMatch(string text, string expr)
         {
             MatchCollection mc = Regex.Matches(text, expr);

@@ -55,7 +55,7 @@ namespace Integral_Calculator
 ## The Code for Integral Calculation (You can use it to calculate the integral of any  function(continuously))
 
 ```c#
-public class MathFunctions
+public static class MathFunctions
 {
     // Function for integral calculation , which takes delegate as argument
     public static double Integrate(MyDelegate f, double x1, double x2, Integration_Accuracy a)

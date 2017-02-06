@@ -23,6 +23,10 @@ namespace Integral_Calculator
         {
             // Giving pointer of MyFunction to MyDelegate 
             MyDelegate Fx = MyFunction;
+            
+            //Invoking function from delegate
+            double result = Fx(5);
+            Console.WriteLine($"Math.Exp(5) + Math.Log10(5) = {result}");
 
             // Calling Integrate function from MathFunctions class and sending Myfunction with MyDelegate  to function Integrate 
             double MyFxResult = MathFunctions.Integrate(Fx, 0, 5, Integration_Accuracy.Accuracy2);

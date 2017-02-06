@@ -5,9 +5,7 @@ namespace MVP_StopWatch
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        //entry point for the application.
         [STAThread]
         static void Main()
         {

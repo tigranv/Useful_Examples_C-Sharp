@@ -36,8 +36,6 @@ class Program
 
 
 
-** Using **
-
 ```c#
 static class Program
 {

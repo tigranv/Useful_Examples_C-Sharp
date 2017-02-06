@@ -44,40 +44,40 @@ for (int i = 0; i < Galaxy1.Numberofplanets; i++)
 ###Here are the codes of indexers
 ```C#
 // Indexer by planets numbers for names
-        public Planets this[int index]
-        {
-            get
-            {
-                if (index >= 0 && index < numberofplanets)
-                    return planets[index];
-                else throw new ArgumentOutOfRangeException();
-            }
-            set
-            {
+public Planets this[int index]
+{
+get
+{
+    if (index >= 0 && index < numberofplanets)
+        return planets[index];
+    else throw new ArgumentOutOfRangeException();
+}
+set
+{
 
-                if (index >= 0 && index < numberofplanets)
-                    planets[index] = (Planets)value;
-                else throw new ArgumentOutOfRangeException();
-            }
-        }
+    if (index >= 0 && index < numberofplanets)
+        planets[index] = (Planets)value;
+    else throw new ArgumentOutOfRangeException();
+}
+}
 
-        // Indexer by planets names, for position
-        public int this[Planets index]
-        {
-            get
-            {
-                for (int i = 0; i < planets.Length; i++)
-                    if (planets[i] == index) return position[i];
-                throw new ArgumentOutOfRangeException();
-            }
-            set
-            {
-                int indicate = 0;
-                for (int i = 0; i < planets.Length; i++)
-                    if (planets[i] == index) { position[i] = value; indicate++; }
-                if(indicate == 0) throw new ArgumentOutOfRangeException();
-            }
-        }
+// Indexer by planets names, for position
+public int this[Planets index]
+{
+get
+{
+    for (int i = 0; i < planets.Length; i++)
+        if (planets[i] == index) return position[i];
+    throw new ArgumentOutOfRangeException();
+}
+set
+{
+    int indicate = 0;
+    for (int i = 0; i < planets.Length; i++)
+        if (planets[i] == index) { position[i] = value; indicate++; }
+    if(indicate == 0) throw new ArgumentOutOfRangeException();
+}
+}
 ```
 
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

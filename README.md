@@ -21,7 +21,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 9. [Creating Directory Tree --------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  
 10. [Integral Calculator (Delegate)] (https://github.com/tigranv/Useful-examples/tree/master/Integral%20Calculator)
 
-11. [Events, working with WPF Buttons] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
+11. [Events, Timer and Calculator] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
 
 12. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
 

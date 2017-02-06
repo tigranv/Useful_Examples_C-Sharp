@@ -12,7 +12,7 @@ Operator overloading permits user-defined operator implementations to be specifi
 
 __Vector-Arithmetic__ example represents vectors and basic operations applyed on them. Project includes operations of adding, subtracting, scalar multiplication, multiplication by number.
 
-> + operator overloading example
+> overloading of plus operator
 
 ```c#
 public static Vector operator +(Vector a, Vector b)

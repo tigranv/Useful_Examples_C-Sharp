@@ -1,6 +1,25 @@
 # Vector-Arithmetic. Example of using operators overloading <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
 
-Example represents vectors and basic operations applyed on them. Project includes operations of adding, subtracting, scalar multiplication, multiplication by number.
+Operator overloading permits user-defined operator implementations to be specified for operations where one or both of the operands are of a user-defined class or struct type.(by defining static member functions using the operator keyword) The folowing operators can be overloaded`
+
+
+> Unary operators +, -, !, ~, ++, --, true, false
+
+> Binary operators +, -, *, /, %, &, |, ^, <<, >>
+
+> Comparison operators  ==, !=, <, >, <=, >=
+
+
+__Vector-Arithmetic__ example represents vectors and basic operations applyed on them. Project includes operations of adding, subtracting, scalar multiplication, multiplication by number.
+
+> overloading of plus operator
+
+```c#
+public static Vector operator +(Vector a, Vector b)
+{
+    return new Vector(a.end.x + b.end.x, a.end.y + b.end.y);
+}
+```
 
 ### Testing
 

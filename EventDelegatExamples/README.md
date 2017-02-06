@@ -5,8 +5,4 @@
 ![Stop Watch](https://cloud.githubusercontent.com/assets/24522089/22300138/f914a546-e33f-11e6-9bd4-92c604e1805e.PNG)
 
 
-### Calculator
-
-![calculator class diagramm](https://cloud.githubusercontent.com/assets/24522089/22300380/b583777a-e340-11e6-86b8-0a08dc8f7adc.PNG)
-
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

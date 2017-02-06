@@ -32,7 +32,7 @@ class Program
 }
 ```
 
-> [MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString*
+> [MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString* given by generic Interface
 
 
 

@@ -23,7 +23,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 11. [Generic Programming (MyList, Generic Extention)] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming)
 
-12. [Events, Timer and Calculator] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
+12. [Events, Timer and Press Key Event Handler] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
 
 13. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
 

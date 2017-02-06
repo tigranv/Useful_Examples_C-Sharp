@@ -1,4 +1,8 @@
 # Different ways to convert 4 bytes to Iint32 <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
+
+It is just a challenge given by my mentor to convert 4 byte numbers to one int in binary, and compare with methot ToInt32
+
+
 ### First method !
 
 ![Method1](https://cloud.githubusercontent.com/assets/24522089/21953133/b536a720-da48-11e6-8bce-7029e2562164.PNG)

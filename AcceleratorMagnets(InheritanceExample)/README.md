@@ -1,4 +1,4 @@
-# Accelerator Magnets (Example of inheritance) <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
+# Accelerator Magnets (Inheritance, Abstraction) <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
 The base class is **Magnets**.It includes Protectedc fields that are typical for any magnet, user constructor and method for base information. UndulatorMagnet and BendingMagnet are derived classes from Magnet
   
 ![magnetsdiagram](https://cloud.githubusercontent.com/assets/24522089/22150384/404a0bc0-df32-11e6-8b7a-97133a35355f.PNG)

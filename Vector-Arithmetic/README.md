@@ -9,10 +9,8 @@ Operator overloading permits user-defined operator implementations to be specifi
 
 > Comparison operators  ==, !=, <, >, <=, >=
 
-```
 
-
-** Vector-Arithmetic ** example represents vectors and basic operations applyed on them. Project includes operations of adding, subtracting, scalar multiplication, multiplication by number.
+__Vector-Arithmetic__ example represents vectors and basic operations applyed on them. Project includes operations of adding, subtracting, scalar multiplication, multiplication by number.
 
 ### Testing
 

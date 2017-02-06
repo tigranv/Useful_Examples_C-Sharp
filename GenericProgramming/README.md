@@ -1,4 +1,4 @@
-# Generic Programming/  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="150px" height="150px" /> 
+# Generic Programming  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="150px" height="150px" /> 
 
 Generic classes and methods combine reusability, type safety and efficiency in a way that their non-generic counterparts cannot. You can create custom generic types and methods to provide your own generalized solutions and design patterns that are type-safe and efficient.
 
@@ -32,7 +32,7 @@ class Program
 }
 ```
 
-> [MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString*
+> [MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString* given by generic Interface
 
 
 

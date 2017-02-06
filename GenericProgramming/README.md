@@ -32,7 +32,7 @@ class Program
 }
 ```
 
-[MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString*
+> [MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString*
 
 
 
@@ -83,7 +83,7 @@ static class Program
 
         var arr = list.GetArray();
 
-        foreach (var item in arr) // working because GetArray returns Array tape
+        foreach (var item in arr) // working because GetArray returns Array type
         {
             Console.WriteLine(item);
         }

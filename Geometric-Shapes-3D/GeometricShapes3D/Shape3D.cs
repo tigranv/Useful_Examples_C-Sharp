@@ -16,7 +16,7 @@
             Location = m;
         }
 
-        public void MoveTo(float x1, float y1, float z1)
+    public void MoveTo(float x1, float y1, float z1)
         {
             Location = new Point3D(x1, y1, z1);
         }

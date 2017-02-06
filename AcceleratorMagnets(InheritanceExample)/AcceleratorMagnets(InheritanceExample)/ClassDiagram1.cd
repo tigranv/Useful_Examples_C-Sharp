@@ -3,26 +3,26 @@
   <Class Name="AcceleratorMagnets_InheritanceExample_.Magnet">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAACAAAAAAAQAEAAAAQAAAAAAAAAAAAAABAAAA=</HashCode>
+      <HashCode>AAAAAAAACAAAAAAAQAEIAAAQAAAAAAAAAAAAAABAAAA=</HashCode>
       <FileName>Magnet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AcceleratorMagnets_InheritanceExample_.UndulatorMagnet">
-    <Position X="6.25" Y="0.75" Width="1.5" />
+    <Position X="7" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAIAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>UndulatorMagnet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AcceleratorMagnets_InheritanceExample_.BendingMagnet">
-    <Position X="2" Y="0.75" Width="1.5" />
+    <Position X="1.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>BendingMagnet.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="AcceleratorMagnets_InheritanceExample_.Material">
-    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Position X="1.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAgBAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enumerations.cs</FileName>
@@ -36,7 +36,7 @@
     </TypeIdentifier>
   </Enum>
   <Enum Name="AcceleratorMagnets_InheritanceExample_.FieldDirection">
-    <Position X="6.25" Y="3.5" Width="1.5" />
+    <Position X="6.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
       <FileName>Enumerations.cs</FileName>

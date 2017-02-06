@@ -19,7 +19,7 @@ namespace AcceleratorMagnets_InheritanceExample_
         private int Periodlenght = 10;
         private int NumberOfPeriods = 80;
 
-        public void PlotTrajectory()
+        public override void PlotTrajectory()
         {           
             Console.WriteLine("Trajectory function of undulator with period length of {0}, and period numbers {1}", Periodlenght, NumberOfPeriods);
             Console.WriteLine(new string('*', 70));

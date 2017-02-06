@@ -18,6 +18,9 @@ namespace AcceleratorMagnets_InheritanceExample_
         private float MagneticLenght { get { return GeometricalLenght * 0.9f; } }
         protected float MagneticFieldStrenght;
 
+        public abstract void PlotTrajectory();
+        
+
         // method for printing core information about magnet
         public void GetInformation()
         {

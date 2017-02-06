@@ -21,7 +21,7 @@ namespace AcceleratorMagnets_InheritanceExample_
         private FieldDirection fd = FieldDirection.Left;
 
         // Method for geting trajectory 
-        public void PlotTrajectory()
+        public override void PlotTrajectory()
         {
             switch (beta)
                 {

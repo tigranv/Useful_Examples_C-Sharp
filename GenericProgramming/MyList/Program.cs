@@ -10,7 +10,7 @@ namespace MyList
     {
         static void Main()
         {
-            // Methods Add, Count, Clear, Contains
+            // Methods Add, Count, Clear, Contains, and indexer
 
             Console.WriteLine("Enter list size");
             string str = Console.ReadLine();

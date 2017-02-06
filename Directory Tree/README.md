@@ -1,6 +1,6 @@
 # Directory Tree  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
 
-It is just a challenge given by my mentor.
+It is just a challenge given by my mentor. I solved it **without using recursion**
 
 ![directory tree](https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG)
 

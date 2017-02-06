@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyList
 {
-    public class MyList<T>
+    public class MyList<T> : IMyList<T>
     {
         private T[] array;
 

@@ -1,6 +1,6 @@
 ﻿namespace Integral_Calculator
 {
-    public class MathFunctions
+    public static class MathFunctions
     {
         // Function for integral calculation , which takes delegate as argument
         public static double Integrate(MyDelegate f, double x1, double x2, Integration_Accuracy a)

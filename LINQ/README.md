@@ -20,6 +20,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
 
 
 > How LINQ Works and General Syntaxis
+
 ```c#
 class Program
 {
@@ -61,38 +62,41 @@ class Program
                        LastName = employee.LastName,
                        FirstName = employee.FirstName
                    };
-
-        // How it works with functions chains
-        //employees
-        //.Where(emp => emp.Salary > 400000)
-        //.OrderBy(emp => emp.LastName)
-        //.OrderBy(emp => emp.FirstName)
-        //.Select(emp => new
-        //{
-        //    LastName = emp.LastName,
-        //    FirstName = emp.FirstName
-        //});
-
-        // How it works with static methods
-        //var query = // query - переменная запрса.
-        //    Enumerable.Select(
-        //    Enumerable.OrderBy(
-        //    Enumerable.OrderBy(
-        //    Enumerable.Where(
-        //    employees, emp => emp.Salary > 100000),
-        //    emp => emp.LastName),
-        //    emp => emp.FirstName),
-        //    emp => new { LastName = emp.LastName, FirstName = emp.FirstName });
-
+                   
         Console.WriteLine("Best salary");
-
         foreach (var item in query)
-            Console.WriteLine("{0} {1}", item.LastName, item.FirstName);
-
-        // Delay.
+        {
+          Console.WriteLine("{0} {1}", item.LastName, item.FirstName);
+        }
+         
         Console.ReadKey();
     }
-}
+}    
+```
+
+```c#
+// How it works with functions chains
+//employees
+//.Where(emp => emp.Salary > 400000)
+//.OrderBy(emp => emp.LastName)
+//.OrderBy(emp => emp.FirstName)
+//.Select(emp => new
+//{
+//    LastName = emp.LastName,
+//    FirstName = emp.FirstName
+//});
+
+// How it works with static methods
+//var query = // query - переменная запрса.
+//    Enumerable.Select(
+//    Enumerable.OrderBy(
+//    Enumerable.OrderBy(
+//    Enumerable.Where(
+//    employees, emp => emp.Salary > 100000),
+//    emp => emp.LastName),
+//    emp => emp.FirstName),
+//    emp => new { LastName = emp.LastName, FirstName = emp.FirstName });
+       
 ```
 
 

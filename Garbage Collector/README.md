@@ -125,6 +125,10 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 >generation 0 checked 20 times
 
 >generation 0 checked 5 times
+>---------------------------------------------------------------------------------
+
+
+
 
 
 > **Nine Lives of a Cat** is a demonstration of Object Resurrection using GC.ReRegisterForFinalize

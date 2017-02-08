@@ -2,7 +2,7 @@
 
 It is a best practice to implement **IEnumerable** and **IEnumerator** on your collection classes to enable the foreach syntax, however implementing IEnumerable is not required. If your collection does not implement IEnumerable, you must still follow the iterator pattern to support this syntax by providing a GetEnumerator method that returns an interface, class or struct. You must provide a class that contains a Current property, and MoveNext and Reset methods as described by IEnumerator, but the class does not have to implement IEnumerator.
 
-> **[MyList]** (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
+> [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 
 ```c#
     class MyList<T>

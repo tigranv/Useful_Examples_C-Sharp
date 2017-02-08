@@ -72,7 +72,7 @@ public void Dispose()
     // TODO: uncomment the following line if the finalizer is overridden above.
     GC.SuppressFinalize(this);
 }
-#endregion
+
 ```
 <br>
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

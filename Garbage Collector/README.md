@@ -88,6 +88,7 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 > **The output is**
 
 > Memory in heap - 158756
+
 >Heap have 3 generation
 
 >RENAULT with speed120 km/h
@@ -97,15 +98,21 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 >Size of memeory in heap 158756
 
 >generation 0 checked 0 times
+
 >generation 0 checked 0 times
+
 >generation 0 checked 0 times
+
 >Size of memeory in heap 160095232
 
 >start  GC
 
 >generation 0 checked 26 times
+
 >generation 0 checked 19 times
+
 >generation 0 checked 4 times
+
 >GC worked                  83.2352
 
 >size of memeory 97444
@@ -114,7 +121,9 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 
 
 >generation 0 checked 27 times
+
 >generation 0 checked 20 times
+
 >generation 0 checked 5 times
 
 

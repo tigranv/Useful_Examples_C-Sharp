@@ -201,10 +201,13 @@ namespace Web_Page_Spying
                     // TODO: dispose managed state (managed objects).
                     client.Dispose();
                     writer.Dispose();
+                    Console.WriteLine("worked");
                 }
 
                 // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
                 // TODO: set large fields to null.
+                client = null;
+                writer = null;
 
                 disposedValue = true;
             }

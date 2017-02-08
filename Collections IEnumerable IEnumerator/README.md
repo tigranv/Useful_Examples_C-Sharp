@@ -2,6 +2,25 @@
 
 It is a best practice to implement **IEnumerable** and **IEnumerator** on your collection classes to enable the foreach syntax, however implementing IEnumerable is not required. If your collection does not implement IEnumerable, you must still follow the iterator pattern to support this syntax by providing a GetEnumerator method that returns an interface, class or struct. You must provide a class that contains a Current property, and MoveNext and Reset methods as described by IEnumerator, but the class does not have to implement IEnumerator.
 
+> **Foreach: how it works**
+```c#
+UserCollection myElementsCollection = new UserCollection(); // consists of elements
+
+//UpCast to IEnumerable
+IEnumerable enumerable = myElementsCollection as IEnumerable;
+
+// Get iterator(enumerator) from enumerable by calling method`  GetEnumerator().            
+IEnumerator enumerator = enumerable.GetEnumerator();
+
+// Use methods of IEnumerable
+while (enumerator.MoveNext()) // Ïåðåìåùàåì êóðñîð íà 1 øàã âïåðåä (ñ -1 íà 0) è ò.ä.
+{
+    Element element = enumerator.Current as Element; // DownCast to type of enement
+
+    Console.WriteLine("Name: {0}  Field1: {1} Field2: {2}", element.Name, element.Field1, element.Field2);
+}
+```
+
 > [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 
 ```c#

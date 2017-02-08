@@ -4,11 +4,12 @@
 
 The Class WebSpy provides an opportunity to get all **URL**-s, from web page, and write them in txt document, creats document of content of web page **cleaned from html tags**, and downloads **all pictures to folder**.
 
+> In this project IDisposable Pattern was used to dispose WebClient and StreamWriter.
+
+
 ![webspy](https://cloud.githubusercontent.com/assets/24522089/22568638/04730a4e-e9ae-11e6-9c86-c977235a33bf.gif)
 
 ### IDisposable interface(IDisposable Pattern)
-
-> In this project IDisposable Pattern was used to dispose WebClient and StreamWriter
 
 The primary use of this interface is to release unmanaged resources. The garbage collector automatically releases the memory allocated to a managed object when that object is no longer used. However, it is not possible to predict when garbage collection will occur. Furthermore, the garbage collector has no knowledge of unmanaged resources such as window handles, or open files and streams.
 <br>

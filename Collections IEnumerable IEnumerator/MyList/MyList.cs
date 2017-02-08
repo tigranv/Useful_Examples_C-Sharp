@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyList
 {
-    class MyList<T>
+    class MyList<T> 
     {
         T[] array = null;
 

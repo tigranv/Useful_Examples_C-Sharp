@@ -206,8 +206,7 @@ namespace Web_Page_Spying
 
                 // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
                 // TODO: set large fields to null.
-                client = null;
-                writer = null;
+                // can be anmanaged resourcies need to close
 
                 disposedValue = true;
             }
@@ -225,7 +224,7 @@ namespace Web_Page_Spying
             // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
             Dispose(true);
             // TODO: uncomment the following line if the finalizer is overridden above.
-            // GC.SuppressFinalize(this);
+            GC.SuppressFinalize(this);
         }
         #endregion
 

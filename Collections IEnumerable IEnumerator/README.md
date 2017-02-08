@@ -1,87 +1,103 @@
 # User Collections IEnumerable, IEnumerator  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="150px" height="150px" /> 
 
-### [MyList] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is a my analogy of class List<T>
+It is a best practice to implement **IEnumerable** and **IEnumerator** on your collection classes to enable the foreach syntax, however implementing IEnumerable is not required. If your collection does not implement IEnumerable, you must still follow the iterator pattern to support this syntax by providing a GetEnumerator method that returns an interface, class or struct. You must provide a class that contains a Current property, and MoveNext and Reset methods as described by IEnumerator, but the class does not have to implement IEnumerator.
 
-> Example of using
-
-```c#
-class Program
-{
-    static void Main()
-    {
-        MyList<int> list = new MyList<int>();
-        for (int i = 0; i < 5; i++)
-            list.Add(i);
-
-        Console.WriteLine("Arrey Length = {0}", list.Count);
-
-        foreach (int item in list)
-            Console.Write("{0}  ", item);
-
-        // Delay.
-        Console.ReadKey();
-    }
-}
-```
-
-
-### [MyDictionary] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyDictionary/MyDictionary.cs) is a my analogy of class Dictionary<T>
-
-> Example of using
+> [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 
 ```c#
-class Program
-{
-    static void Main()
+    class MyList<T>
     {
-        var dictionary = new MyDictionary<string, string>(5);
+        T[] array = null;
 
-        dictionary.Add(0, "սեղան", "table");
-        dictionary.Add(1, "խնձոր", "aplle");
-        dictionary.Add(2, "մատիտ", "pencil");
-        dictionary.Add(3, "արև", "sun");
-        dictionary.Add(4, "գիրք", "book");
-
-        foreach (var item in dictionary)
+        public MyList()
         {
-            Console.WriteLine(item);
+            array = new T[0];
         }
 
-        Console.WriteLine(new string('-', 20));
-        Console.WriteLine("second note in dictionary:");
-        Console.WriteLine(dictionary[1]);
-        Console.WriteLine(new string('-', 20));
-        Console.WriteLine("Length of dictionary:");
-        Console.WriteLine(dictionary.Lenght + " words");
-        Console.WriteLine(new string('-', 50));
+        public int Count
+        {
+            get { return array.Length; }
+        }
 
-        // Delay.
-        Console.ReadKey();
+        public void Add(T elem)
+        {
+            T[] arr = new T[array.Length + 1];
+            array.CopyTo(arr, 0);
+            arr[array.Length] = elem;
+            array = arr;
+        }
+
+        public T this[int index]
+        {
+            get { return array[index]; }
+        }
+
+        int position = -1;
+
+        public void Reset()
+        {
+            position = -1;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            while (true)
+            {
+                if (position < array.Length - 1)
+                {
+                    position++;
+                    yield return array[position];
+                }
+                else
+                {
+                    Reset();
+                    yield break;
+                }
+            }
+        }
+    }
+```
+
+> **GetArrayExtention** - Extention method for generic IEnumerable, that converts list to array.
+
+
+```c#
+public static T[] GetArray<T>(this IEnumerable<T> list)
+{
+    T[] array = new T[list.Count()];
+
+    int i = 0;
+
+    foreach (T item in list)
+    {
+        array[i] = item;
+        i++;
+    }
+
+    return array;
+}
+```
+
+> **FindEven** - Extention method that returns IEnumerable collection from int array
+
+```c#
+static IEnumerable FindEven(int[] arr)
+{
+    if (arr.Length != 0)
+    {
+        foreach (var item in arr)
+        if (item%2 == 0)  yield return item;
+
+    }
+    else
+    {
+        yield break;
     }
 }
 ```
-
-### [GetArrayExtention] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator/GetArrayExtention) is extention method for IEnumerable<T>, that converts list to array.
-
-> Example of using
-
-```c#
-static void Main()
-{
-
-    MyList<int> list = new MyList<int>();
-
-    for (int i = 0; i < 8; i++)
-        list.Add(i);
-
-    int[] arr = list.GetArray();
-
-    foreach (int t in arr)
-        Console.Write("{0}  ", t);
-
-    // Delay.
-    Console.ReadKey();
-}
-```
-
+ 
+ 
+ 
+ 
+ 
 > Projects written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

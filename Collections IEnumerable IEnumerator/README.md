@@ -7,7 +7,7 @@ It is a best practice to implement **IEnumerable** and **IEnumerator** on your c
 
 ```c#
 
-UserCollection myElementsCollection = new UserCollection(); // consists of elements
+UserCollection myElementsCollection = new UserCollection(); 
 
 //UpCast to IEnumerable
 IEnumerable enumerable = myElementsCollection as IEnumerable;
@@ -24,11 +24,11 @@ while (enumerator.MoveNext())
 
 ```
 
-> Where  methods and property of IEnumerable  and IEnumerator is
+> Where  class UserCollection is:
 
 
 ```c#
-class UserCollection : IEnumerable  // inherits from IEnumerable  and IEnumerator
+class UserCollection : IEnumerable, IEnumerator  // inherits from IEnumerable  and IEnumerator
 {
 
 public Element[] elementsArray = null;
@@ -41,6 +41,8 @@ public UserCollection()
 }
 
 // implimentation of interfaces
+
+int position = -1;
 
 public bool MoveNext()
 {

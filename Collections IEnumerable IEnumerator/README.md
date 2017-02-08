@@ -16,14 +16,51 @@ IEnumerable enumerable = myElementsCollection as IEnumerable;
 IEnumerator enumerator = enumerable.GetEnumerator();
 
 // Use methods of IEnumerable
-while (enumerator.MoveNext()) // Ïåðåìåùàåì êóðñîð íà 1 øàã âïåðåä (ñ -1 íà 0) è ò.ä.
+while (enumerator.MoveNext())
 {
-    Element element = enumerator.Current as Element; // DownCast to type of enement
-
-    Console.WriteLine("Name: {0}  Field1: {1} Field2: {2}", element.Name, element.Field1, element.Field2);
+    Element item = enumerator.Current as Element; // DownCast to type of enement
+    // using item
 }
 
 ```
+
+> Where  methods and property of IEnumerable  and IEnumerator is
+
+
+```c#
+public bool MoveNext()
+{
+    if (position < elementsArray.Length - 1)
+    {
+        position++;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+
+public void Reset()
+{
+    position = -1;
+}
+
+
+public object Current
+{
+    get { return elementsArray[position]; }
+}
+
+
+IEnumerator IEnumerable.GetEnumerator()
+{
+    return this as IEnumerator;
+}
+```
+
+
 
 > [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 

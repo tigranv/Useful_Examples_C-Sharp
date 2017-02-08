@@ -28,6 +28,20 @@ while (enumerator.MoveNext())
 
 
 ```c#
+class UserCollection : IEnumerable  // inherits from IEnumerable  and IEnumerator
+{
+
+public Element[] elementsArray = null;
+
+public UserCollection()
+{
+    elementsArray = new Element[2];
+    elementsArray[0] = new Element("A", 1, 10);
+    elementsArray[1] = new Element("B", 2, 20);
+}
+
+// implimentation of interfaces
+
 public bool MoveNext()
 {
     if (position < elementsArray.Length - 1)
@@ -104,6 +118,8 @@ IEnumerator IEnumerable.GetEnumerator()
         }
 ```
 
+
+### Examples of using IEnumerable  and IEnumerator
 
 > [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 

@@ -25,7 +25,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 12. [Events  (Timer and Press Key Event Handler)] (https://github.com/tigranv/Useful-examples/tree/master/EventDelegatExamples)
 
-13. [User Collections IEnumerable, IEnumerator] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
+13. [IEnumerable, IEnumerator Interfaces  (Yield)] (https://github.com/tigranv/Useful-examples/tree/master/Collections%20IEnumerable%20IEnumerator)
 
 14. [LINQ Introduction, Keywords] (https://github.com/tigranv/Useful-examples/tree/master/LINQ)  <img src="https://cloud.githubusercontent.com/assets/24522089/22568638/04730a4e-e9ae-11e6-9c86-c977235a33bf.gif" align="right" width="400px" height="220px" />
 

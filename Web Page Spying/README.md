@@ -8,12 +8,9 @@ The Class WebSpy provides an opportunity to get all **URL**-s, from web page, an
 
 ### IDisposable interface(IDisposable Pattern)
 The primary use of this interface is to release unmanaged resources. The garbage collector automatically releases the memory allocated to a managed object when that object is no longer used. However, it is not possible to predict when garbage collection will occur. Furthermore, the garbage collector has no knowledge of unmanaged resources such as window handles, or open files and streams.
-
 <br>
-
 The CLR provides some help in releasing unmanaged resources. System.Object declares a virtual method Finalize (also called the finalizer) that is called by the GC before the object’s memory is reclaimed by the GC and can be overridden to release unmanaged resources. Types that override the finalizer are referred to as finalizable types.
 <br>
-
 Although finalizers are effective in some cleanup scenarios, they have two significant drawbacks:
 <br>
 * The finalizer is called when the GC detects that an object is eligible for collection. This happens at some undetermined period of time after the resource is not needed anymore. The delay between when the developer could or would like to release the resource and the time when the resource is actually released by the finalizer might be unacceptable in programs that acquire many scarce resources (resources that can be easily exhausted) or in cases in which resources are costly to keep in use (e.g., large unmanaged memory buffers).
@@ -50,7 +47,5 @@ public class DisposableResourceHolder : IDisposable {
     }  
 }
 ```
-<br>
-
 <br>
 > This project written on C# 6.0, .NET Framework 4.6 Visual Studio 2015 Comunity Edition

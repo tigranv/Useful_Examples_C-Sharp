@@ -13,7 +13,7 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 * Provides memory safety by making sure that an object cannot use the content of another object.
 
 
-> **GC Generations** is a demonstration of Object Resurrection using GC.ReRegisterForFinalize
+> **GC Generations** is a demonstration how GC is working
 
 ```c#
     class Program

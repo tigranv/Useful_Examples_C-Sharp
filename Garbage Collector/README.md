@@ -88,34 +88,34 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 > **The output is**
 
 > Memory in heap - 158756
-Heap have 3 generation
+>Heap have 3 generation
 
-RENAULT with speed120 km/h
+>RENAULT with speed120 km/h
 
-Object car in 0 generation
+>Object car in 0 generation
 
-Size of memeory in heap 158756
+>Size of memeory in heap 158756
 
-generation 0 checked 0 times
-generation 0 checked 0 times
-generation 0 checked 0 times
-Size of memeory in heap 160095232
+>generation 0 checked 0 times
+>generation 0 checked 0 times
+>generation 0 checked 0 times
+>Size of memeory in heap 160095232
 
-start  GC
+>start  GC
 
-generation 0 checked 26 times
-generation 0 checked 19 times
-generation 0 checked 4 times
-GC worked                  83.2352
+>generation 0 checked 26 times
+>generation 0 checked 19 times
+>generation 0 checked 4 times
+>GC worked                  83.2352
 
-size of memeory 97444
+>size of memeory 97444
 
-Object car in 2 generation.
+>Object car in 2 generation.
 
 
-generation 0 checked 27 times
-generation 0 checked 20 times
-generation 0 checked 5 times
+>generation 0 checked 27 times
+>generation 0 checked 20 times
+>generation 0 checked 5 times
 
 
 > **Nine Lives of a Cat** is a demonstration of Object Resurrection using GC.ReRegisterForFinalize

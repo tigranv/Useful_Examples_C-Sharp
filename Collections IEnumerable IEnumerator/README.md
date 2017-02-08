@@ -61,6 +61,49 @@ IEnumerator IEnumerable.GetEnumerator()
 ```
 
 
+> In case of Yield
+
+```c#
+ public class UserCollection : IEnumerable  // inherits only from IEnumerable 
+    {
+        public Element[] elementsArray = null;
+
+        public UserCollection()
+        {
+            elementsArray = new Element[2];
+            elementsArray[0] = new Element("A", 1, 10);
+            elementsArray[1] = new Element("B", 2, 20);
+        }
+
+
+        int position = -1;
+
+        public void Reset()
+        {
+            position = -1;
+        }
+
+        // -------------------------------------------------------------------------------------------------------------------------
+        // yield creats all methods and returns collection IEnumerator
+
+        public IEnumerator GetEnumerator()
+        {
+            while (true)
+            {
+                if (position < elementsArray.Length - 1)
+                {
+                    position++;
+                    yield return elementsArray[position];
+                }
+                else
+                {
+                    Reset();
+                    yield break;  // Âûõîä èç öèêëà.       
+                }
+            }
+        }
+```
+
 
 > [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 

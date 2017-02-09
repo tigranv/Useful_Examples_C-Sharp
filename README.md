@@ -3,7 +3,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 1. [**Inheritance**, **Encapsulation**, **Abstraction** (Accelerator magnets)] (https://github.com/tigranv/Useful-examples/tree/master/AcceleratorMagnets(InheritanceExample)) 
 
-2. [**Interfacies**, **Polymorphism**  (3D Geometric Shapes) ---------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D) <img src="https://cloud.githubusercontent.com/assets/24522089/22154134/c4504766-df43-11e6-8bf0-20dd4449a48d.PNG" align="right" width="400px" height="150px" />
+2. [**Interfacies**, **Polymorphism**  (3D Geometric Shapes) -------->] (https://github.com/tigranv/Useful-examples/tree/master/Geometric-Shapes-3D) <img src="https://cloud.githubusercontent.com/assets/24522089/22154134/c4504766-df43-11e6-8bf0-20dd4449a48d.PNG" align="right" width="400px" height="150px" />
 
 3. [**Indexers** (New Solar System, Fibonacci Calculator)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 

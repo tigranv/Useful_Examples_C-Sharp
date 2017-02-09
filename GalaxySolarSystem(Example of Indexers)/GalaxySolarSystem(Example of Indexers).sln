@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxySolarSystem(Example of Indexers)", "GalaxySolarSystem(Example of Indexers)\GalaxySolarSystem(Example of Indexers).csproj", "{E584AF5C-BD47-41E3-88F9-D5940621043D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibomacci Calculator Indexers Example", "Fibomacci Calculator Indexers Example\Fibomacci Calculator Indexers Example.csproj", "{B6DC356E-C2A5-4C9E-803E-1D338604AB0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci Calculator Indexers Example", "Fibomacci Calculator Indexers Example\Fibonacci Calculator Indexers Example.csproj", "{B6DC356E-C2A5-4C9E-803E-1D338604AB0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

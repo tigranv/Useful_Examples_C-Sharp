@@ -7,13 +7,13 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 3. [**Indexers** (New Solar System, Fibonacci Calculator)] (https://github.com/tigranv/Useful-examples/tree/master/GalaxySolarSystem(Example%20of%20Indexers))
 
-4. [**Extention Methods** and **Dictionary** (Latin letters to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter)
+4. [**Extention Methods** and **Dictionary** (Latin to Armenian) ] (https://github.com/tigranv/Useful-examples/tree/master/LatinToArmenianConverter)
 
 5. [Example of **Operators Overloading** (Vector Arithmetic)] (https://github.com/tigranv/Useful-examples/tree/master/Vector-Arithmetic)
 
 6. [Functions for converting 4 bytes to one Int32 in binary] (https://github.com/tigranv/Useful-examples/tree/master/From4BytesToInt32Methods)
 
-7. [Working with **Files IO** (Clean Directory)(**Exception Handling**)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles) <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="400px" height="120px" />
+7. [ **IO** , **Exception Handling** (Creat file, Clean Directory)()] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles) <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="400px" height="120px" />
 
 
 8. [Creating Directory Tree --------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  

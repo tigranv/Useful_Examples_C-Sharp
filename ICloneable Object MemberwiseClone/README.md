@@ -9,13 +9,13 @@ This is the ultimate base class of all classes in the .NET Framework; it is the 
 
 | Method Name | Description |
 | --- | --- | --- | --- |
-| **Equals**(Object)| Determines whether the specified object is equal to the current object. | 
+| **Equals**(Obj)| Determines whether the specified object is equal to the current object. | 
 |**ToString**() | Returns a string that represents the current object.| 
 | **GetHashCode**() |Serves as the default hash function.| 
 | **GetType**() | Gets the Type of the current instance. | 
 | **MemberwiseClone**() | (**protected**) Creates a shallow copy of the current Object. | 
-| **ReferenceEquals**(Object, Object) | (**static**) Determines whether the specified Object instances are the same instance.| 
-| **Equals**(Object, Object) | (**static**) Determines whether the specified object instances are considered equal. | 
+| **ReferenceEquals**(Obj, Obj) | (**static**) Determines whether the specified Object instances are the same instance.| 
+| **Equals**(Obj, Obj) | (**static**) Determines whether the specified object instances are considered equal. | 
 |  **Object**()| constructor. | 
 | **~Object**()| Finalizer: Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. | 
 

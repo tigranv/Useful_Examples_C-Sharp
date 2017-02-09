@@ -31,15 +31,16 @@ The **ICloneable** interface enables you to provide a customized implementation 
 
 **MemberwiseClone, IClonable** is an example  of *Deep* and *Shallow* cloning
 
-> Testing result is
+> **Testing result is**
 
-> --> MemberwiseClone() method does not using constructor <--
+
+> --> MemberwiseClone() method **does not using constructor** <--
 
 Cloning With Constructor-         2536143 ticks
 
 Cloning With MemberwiseClone-     2181 ticks
 
-> -----> Example of Shallow Cloning <------
+> -----> Example of **Shallow Cloning **<------
 
 > Original
 
@@ -60,7 +61,7 @@ Cloning With MemberwiseClone-     2181 ticks
  City is --> Yerevan
 
 
-> -----> Example of deep Cloning <------
+> -----> Example of **deep Cloning** <------
 
 > Original
 
@@ -80,7 +81,8 @@ Cloning With MemberwiseClone-     2181 ticks
  
  City is --> Yerevan
 
-> Example of Cloning methods
+
+
 ```c#
 public class House 
 {

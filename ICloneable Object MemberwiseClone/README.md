@@ -34,13 +34,13 @@ The **ICloneable** interface enables you to provide a customized implementation 
 > **Testing result is**
 
 
-> --> MemberwiseClone() method **does not using constructor** <--
+> --> ** MemberwiseClone Cloning Without Constructor** <--
 
 >Cloning With Constructor-         2536143 ticks
 
 >Cloning With MemberwiseClone-     2181 ticks
 
-> -----> Example of **Shallow Cloning **<------
+> -----> **Shallow Cloning** <------
 
 > Original
 
@@ -60,7 +60,7 @@ The **ICloneable** interface enables you to provide a customized implementation 
  
 > City is --> Yerevan
 
-> -----> Example of **deep Cloning** <------
+> -----> **Deep Cloning** <------
 
 > Original
 

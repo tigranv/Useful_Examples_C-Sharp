@@ -21,7 +21,7 @@ namespace Object_Methods_Overriding
 
         public override bool Equals(object obj)
         {
-            if(obj == null || this.GetType() != obj.GetType())
+            if(obj == null || GetType() != obj.GetType())
             return false;
 
             Box inst = obj as Box;

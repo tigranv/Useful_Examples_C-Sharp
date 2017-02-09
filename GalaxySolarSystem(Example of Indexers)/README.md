@@ -56,10 +56,13 @@ for (int i = 0; i < Galaxy1.Numberofplanets; i++)
                 }           
             }
 ```
-###The output is the full information about your Solar system
+
+> The output is the full information about your Solar system
+
 ![Output] (https://cloud.githubusercontent.com/assets/24522089/21958406/df04d260-dac6-11e6-9773-189126c50797.PNG)
 
-###Here are the codes of indexers
+>Here are the codes of indexers
+
 ```C#
 // Indexer by planets numbers for names
 public Planets this[int index]

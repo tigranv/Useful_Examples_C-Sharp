@@ -29,6 +29,112 @@ The **ICloneable** interface enables you to provide a customized implementation 
 
 ### Examples
 
+**MemberwiseClone, IClonable** is an example  of *Deep* and *Shallow* cloning
+
+> Testing result is
+
+> --> MemberwiseClone() method does not using constructor <--
+
+Cloning With Constructor-         2536143 ticks
+
+Cloning With MemberwiseClone-     2181 ticks
+
+> -----> Example of Shallow Cloning <------
+
+> Original
+
+ Street is --> Kievyan
+ 
+ City is --> Yerevan
+
+> Original after changing
+
+ Street is --> Rive
+ 
+ City is --> Geneva
+
+> Clone
+
+ Street is --> Rive
+ 
+ City is --> Yerevan
+
+
+> -----> Example of deep Cloning <------
+
+> Original
+
+ Street is --> Kievyan
+ 
+ City is --> Yerevan
+
+> Original after changing
+
+ Street is --> Rive
+ 
+ City is --> Geneva
+
+> Clone
+
+ Street is --> Kievyan
+ 
+ City is --> Yerevan
+
+> Example of Cloning methods
+```c#
+public class House 
+{
+    public Street street { get; set; }
+    public string City { get; set; }
+
+    public House(Street street, string City)
+    {
+        Thread.Sleep(1000); // to see that memberwiseClone is not calling constructor
+        this.street = street;
+        this.City = City;
+    }
+
+    // Shallow cloning using MemberwiseClone
+    public object CloneWithMemberwise()
+    {
+        return MemberwiseClone() as House;
+    }
+
+    // Shallow cloning using Constructor
+    public object CloneWithConstructor()
+    {
+        return new House(this.street, this.City);
+    }
+
+    public object DeepClone()
+    {
+        return new House(this.street.Clone() as Street, this.City);
+        // // or in case if class Street dont have clone
+        //House other = (House)this.MemberwiseClone();
+        //other.street = new Street(street.Name);
+        //other.City = String.Copy(City);
+        //return other;
+    }
+}
+
+public class Street :ICloneable
+{
+    public string Name { get; set; }
+
+    public Street(string name)
+    {
+        Name = name;
+    }
+
+    // implimenting IClonable interface
+    public object Clone()
+    {
+        return MemberwiseClone();
+    }
+}
+```
+
+
 **Object_Methods_Overriding** is an example  how you can override methods of object class
 
 > We have class Box:
@@ -103,7 +209,7 @@ static void Main()
 
 
 
-**MemberwiseClone, IClonable** is an example  of *Deep* and *Shallow* cloning
+
 
 
 

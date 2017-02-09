@@ -25,7 +25,7 @@ The **MemberwiseClone** method creates a shallow copy by creating a new object, 
 
 > 
 
-The **ICloneable** interface enables you to provide a customized implementation that creates a copy of an existing object. The ICloneable interface contains one member, the Clone method, which is intended to provide cloning support beyond that supplied by Object.MemberwiseClone.
+The **ICloneable** interface enables you to provide a customized implementation that creates a copy of an existing object. The ICloneable interface contains one member, the Clone method, which is intended to provide cloning support beyond that supplied by Object.MemberwiseClone. An implementation of Clone can perform either a deep copy or a shallow copy. In a deep copy, all objects are duplicated; in a shallow copy, only the top-level objects are duplicated and the lower levels contain references. 
 
 ### Examples
 
@@ -103,7 +103,7 @@ static void Main()
 
 
 
-**MemberwiseClone, IClonable** is an example  of *Deep* and *Shallow* 
+**MemberwiseClone, IClonable** is an example  of *Deep* and *Shallow* cloning
 
 
 

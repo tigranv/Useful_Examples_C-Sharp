@@ -36,52 +36,52 @@ The **ICloneable** interface enables you to provide a customized implementation 
 
 > --> MemberwiseClone() method **does not using constructor** <--
 
-Cloning With Constructor-         2536143 ticks
+>Cloning With Constructor-         2536143 ticks
 
-Cloning With MemberwiseClone-     2181 ticks
+>Cloning With MemberwiseClone-     2181 ticks
 
 > -----> Example of **Shallow Cloning **<------
 
 > Original
 
- Street is --> Kievyan
+> Street is --> Kievyan
  
- City is --> Yerevan
+> City is --> Yerevan
 
 > Original after changing
 
- Street is --> Rive
+> Street is --> Rive
  
- City is --> Geneva
+> City is --> Geneva
 
 > Clone
 
- Street is --> Rive
+> Street is --> Rive
  
- City is --> Yerevan
-
+> City is --> Yerevan
 
 > -----> Example of **deep Cloning** <------
 
 > Original
 
- Street is --> Kievyan
+> Street is --> Kievyan
  
- City is --> Yerevan
+> City is --> Yerevan
 
 > Original after changing
 
- Street is --> Rive
- 
- City is --> Geneva
+> Street is --> Rive
+
+> City is --> Geneva
 
 > Clone
 
- Street is --> Kievyan
- 
- City is --> Yerevan
+> Street is --> Kievyan
+
+> City is --> Yerevan
 
 
+**Codes of methods are**
 
 ```c#
 public class House 

@@ -68,7 +68,7 @@ In the common language runtime (CLR), the garbage collector serves as an automat
 
             Console.WriteLine("\nObject car in {0} generation.\n", GC.GetGeneration(car));
 
-            // Метод CollectionCount() - how much checked this object
+            // Method CollectionCount() - how much checked this object
 
             ShowGCStat();
 

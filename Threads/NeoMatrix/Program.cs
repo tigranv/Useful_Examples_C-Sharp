@@ -12,32 +12,18 @@ namespace NeoMatrix
     {
         static void Main(string[] args)
         {
-            
-            //ParameterizedThreadStart task = new ParameterizedThreadStart(Operator);
+            Console.CursorVisible = false;
+            Console.SetWindowSize(80, 42);
 
-            Thread Task = new Thread(Operator);
-            Task.IsBackground = false;
-            Task.Start(400);
+            MatrixBuilder instance;
 
-
-            int i = 400;
-            while (i > 0)
+            for (int i = 0; i < 26; i++)
             {
-                Console.WriteLine("arajnayin");
-                i--;
+                instance = new MatrixBuilder(i * 3, true);
+                new Thread(instance.Move).Start();
             }
-
 
         }
 
-        static void Operator(object a)
-        {
-            int i = (int)a;
-            while (true)
-            {
-                Console.WriteLine("\t\tErkrordakan hosq");
-                i--;
-            }
-        }
     }
 }

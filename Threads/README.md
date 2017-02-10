@@ -33,15 +33,15 @@ Instances of the Thread class represent either foreground threads or background 
 
 > By default, the following threads execute in the foreground:
 
-*The main application thread.*
+* The main application thread.*
 
-*All threads created by calling a Thread class constructor.*
+* All threads created by calling a Thread class constructor.*
 
 > The following threads execute in the background by default:
 
-*Thread pool threads, which are a pool of worker threads maintained by the runtime. You can configure the thread pool and schedule work on thread pool threads by using the **ThreadPool** class.*
+* Thread pool threads, which are a pool of worker threads maintained by the runtime. You can configure the thread pool and schedule work on thread pool threads by using the **ThreadPool** class.*
 
-*All threads that enter the managed execution environment from unmanaged code.*
+* All threads that enter the managed execution environment from unmanaged code.*
 
 You can change a thread to execute in the background by setting the IsBackground property at any time. Background threads are useful for any operation that should continue as long as an application is running but should not prevent the application from terminating, such as monitoring file system changes or incoming socket connections.
 

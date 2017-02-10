@@ -11,9 +11,10 @@ namespace Object_Methods_Overriding
         static void Main()
         {
             // creating 2 boxes
-            Box box1 = new Box(15, 12, 5);
-            Box box2 = new Box(7, 12, 5);
+            Box box1 = new Box(7, 12, 7);
+            Box box2 = new Box(7, 12, 7);
 
+            //box1 = box2;
             Console.WriteLine(box1.ToString()+"\n");
             Console.WriteLine(box2.ToString());
 
@@ -22,7 +23,8 @@ namespace Object_Methods_Overriding
             Console.WriteLine("box1 equals to box2 = {0} \n", box1.Equals(box2));
 
             Console.WriteLine(box1.GetHashCode() == box2.GetHashCode() ? "hash Codes are equal" : "Hash Codes are different");
-
+            Console.WriteLine(box1.GetHashCode());
+            Console.WriteLine(box2.GetHashCode());
 
             // Delay.
             Console.ReadKey();

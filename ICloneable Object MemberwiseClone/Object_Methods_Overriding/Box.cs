@@ -33,10 +33,10 @@ namespace Object_Methods_Overriding
             return $"Box with sizes A = {sideA}, B = {sideB}, C = {sideC}"; ;
         }
 
-        public override int GetHashCode()
-        {
-            return (int)sideA ^ (int)sideB ^ (int)sideC;
-        }
+        //public override int GetHashCode()
+        //{
+        //    return (int)sideA ^ (int)sideB ^ (int)sideC;
+        //}
 
     }
 }

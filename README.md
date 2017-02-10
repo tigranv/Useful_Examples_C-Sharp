@@ -43,11 +43,6 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 
 
-
-<br>
-<br>
-<br>
-
 <br>
 <br>
 <br>

@@ -64,12 +64,30 @@ You can retrieve a number of property values that provide information about a th
 
 ### Using Threads and Threading
 
-> Code Example
+> Neo Matrix
 
 ```c#
-Not Completed
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.CursorVisible = false;
+        Console.SetWindowSize(80, 42);
+
+        MatrixBuilder instance;
+
+        for (int i = 0; i < 26; i++)
+        {
+            instance = new MatrixBuilder(i * 3, true);
+            new Thread(instance.Move).Start();
+        }
+
+    }
+}
 ```
 
+> How NeoMatrix Works
+![gif](https://cloud.githubusercontent.com/assets/24522089/22842810/15fe532a-eff0-11e6-8d55-38859e6c254a.gif)
 
 
 

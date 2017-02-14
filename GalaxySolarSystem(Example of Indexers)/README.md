@@ -4,7 +4,7 @@
 
 * Indexers enable objects to be indexed in a similar manner to arrays.
 
-* A **get** accessor returns a value. A set accessor assigns a value.
+* A **get** accessor returns a value. A **set** accessor assigns a value.
 
 * The **this** keyword is used to define the indexers.
 

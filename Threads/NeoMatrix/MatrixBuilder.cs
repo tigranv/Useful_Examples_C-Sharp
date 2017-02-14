@@ -9,7 +9,7 @@ namespace NeoMatrix
 
         Random rand;
 
-        const string litters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        const string letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
         public int Colunm { get; set; }
 

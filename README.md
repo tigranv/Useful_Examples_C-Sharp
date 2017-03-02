@@ -40,7 +40,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 17. [**Thread Class, Threading**] (https://github.com/tigranv/Useful_Examples/tree/master/Threads)
 
-17. [**Async Await** (Betting Terminal)] (https://github.com/tigranv/BETTING-TERMINAL)
+17. [**Task Parallel Library (TPL)** (Betting Terminal)] (https://github.com/tigranv/BETTING-TERMINAL)
 
 
 

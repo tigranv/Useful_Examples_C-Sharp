@@ -16,7 +16,7 @@ In this repository, I gathered a lot of useful examples that I create while stud
 7. [ **IO**, **Exception Handling** (Creat file, Clean Directory)] (https://github.com/tigranv/Useful-examples/tree/master/WorkWithFiles) <img src="https://cloud.githubusercontent.com/assets/24522089/22175859/2c1eaaa8-e017-11e6-9694-17371ac3d4be.PNG" align="right" width="400px" height="120px" />
 
 
-8. [Creating Directory Tree --------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  
+8. [**Creating Directory Tree** --------------------------------------->] (https://github.com/tigranv/Useful-examples/tree/master/Directory%20Tree)  
 
 9. [**Delegate** (Integral Calculator)] (https://github.com/tigranv/Useful-examples/tree/master/Integral%20Calculator)
 
@@ -39,6 +39,8 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 
 17. [**Thread Class, Threading**] (https://github.com/tigranv/Useful_Examples/tree/master/Threads)
+
+17. [**Task Parallel Library (TPL)** (Betting Terminal)] (https://github.com/tigranv/BETTING-TERMINAL)
 
 
 

@@ -40,7 +40,10 @@ In this repository, I gathered a lot of useful examples that I create while stud
 
 17. [**Thread Class, Threading**] (https://github.com/tigranv/Useful_Examples/tree/master/Threads)
 
-17. [**Task Parallel Library (TPL)** (Betting Terminal)] (https://github.com/tigranv/BETTING-TERMINAL)
+18. [**Task Parallel Library (TPL)** (Betting Terminal)] (https://github.com/tigranv/BETTING-TERMINAL)
+
+19. [**Reflection And Attributes** (Early and Late Binding, ...)] (https://github.com/tigranv/Useful_Examples/tree/master/Reflection%20and%20Attributes)
+
 
 
 

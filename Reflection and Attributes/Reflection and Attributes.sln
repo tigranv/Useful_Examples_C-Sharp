@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attributes", "Attributes", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLibrary", "CarLibrary\CarLibrary.csproj", "{4C328EA9-6582-44CC-B0A8-450667BDA1A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCarClient", "CSharpCarClient\CSharpCarClient.csproj", "{AF5025C7-195B-4124-8D70-14CFFE448B34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,16 @@ Global
 		{4C328EA9-6582-44CC-B0A8-450667BDA1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C328EA9-6582-44CC-B0A8-450667BDA1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C328EA9-6582-44CC-B0A8-450667BDA1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5025C7-195B-4124-8D70-14CFFE448B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5025C7-195B-4124-8D70-14CFFE448B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5025C7-195B-4124-8D70-14CFFE448B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5025C7-195B-4124-8D70-14CFFE448B34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4C328EA9-6582-44CC-B0A8-450667BDA1A6} = {7FC20295-E0D0-4102-9CCE-373B4F2A3A0D}
+		{AF5025C7-195B-4124-8D70-14CFFE448B34} = {7FC20295-E0D0-4102-9CCE-373B4F2A3A0D}
 	EndGlobalSection
 EndGlobal

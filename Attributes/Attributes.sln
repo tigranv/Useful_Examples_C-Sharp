@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Create Attribute", "Create Attribute\Create Attribute.csproj", "{E3C86FAA-8CB0-4FB9-A5CB-EAE9D6FAA28B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base Class Attribute", "Base Class Attribute\Base Class Attribute.csproj", "{B024B177-DC20-4AA1-B045-08D3757412AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E3C86FAA-8CB0-4FB9-A5CB-EAE9D6FAA28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3C86FAA-8CB0-4FB9-A5CB-EAE9D6FAA28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3C86FAA-8CB0-4FB9-A5CB-EAE9D6FAA28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B024B177-DC20-4AA1-B045-08D3757412AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B024B177-DC20-4AA1-B045-08D3757412AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B024B177-DC20-4AA1-B045-08D3757412AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B024B177-DC20-4AA1-B045-08D3757412AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

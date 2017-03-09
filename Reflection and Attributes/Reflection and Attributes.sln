@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCarClient", "CSharpCa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadAssembly", "LoadAssembly\LoadAssembly.csproj", "{69713B78-AEC4-4B7F-8502-5477ED41C8FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LateBinding Object", "LateBinding Object\LateBinding Object.csproj", "{86E09C15-A92C-4554-8329-5A0BE9595E7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{69713B78-AEC4-4B7F-8502-5477ED41C8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69713B78-AEC4-4B7F-8502-5477ED41C8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69713B78-AEC4-4B7F-8502-5477ED41C8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86E09C15-A92C-4554-8329-5A0BE9595E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86E09C15-A92C-4554-8329-5A0BE9595E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86E09C15-A92C-4554-8329-5A0BE9595E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86E09C15-A92C-4554-8329-5A0BE9595E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,5 +45,6 @@ Global
 		{4C328EA9-6582-44CC-B0A8-450667BDA1A6} = {7FC20295-E0D0-4102-9CCE-373B4F2A3A0D}
 		{AF5025C7-195B-4124-8D70-14CFFE448B34} = {7FC20295-E0D0-4102-9CCE-373B4F2A3A0D}
 		{69713B78-AEC4-4B7F-8502-5477ED41C8FF} = {7FC20295-E0D0-4102-9CCE-373B4F2A3A0D}
+		{86E09C15-A92C-4554-8329-5A0BE9595E7C} = {7FC20295-E0D0-4102-9CCE-373B4F2A3A0D}
 	EndGlobalSection
 EndGlobal

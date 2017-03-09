@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Base_Class_Attribute
 {
@@ -15,7 +11,7 @@ namespace Base_Class_Attribute
             //Type type = typeof(MyClass);
             MemberInfo type = typeof(MyClass);
 
-            // Метод GetCustomAttributes() - returns objects array of objects which are boxed attributes
+            // GetCustomAttributes() - returns objects array of objects which are boxed attributes
             // getting from arrey elements Types of - MyAttribute.
             object[] attributes = type.GetCustomAttributes(typeof(MyAttribute), true); // true - also base class attributes
 

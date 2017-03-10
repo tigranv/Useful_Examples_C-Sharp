@@ -1,6 +1,7 @@
 # Reflection  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
 
-> [**Reflection**] (https://msdn.microsoft.com/en-us/library/mt656691.aspx) provides objects (of type Type) that describe assemblies, modules and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using [attributes] (https://msdn.microsoft.com/en-us/library/5x6cd29c.aspx) in your code, reflection enables you to access them.
+[**Reflection**] (https://msdn.microsoft.com/en-us/library/mt656691.aspx) provides objects (of type Type) that describe assemblies, modules and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using [attributes] (https://msdn.microsoft.com/en-us/library/5x6cd29c.aspx) in your code, reflection enables you to access them.
+
 
 > Reflection is useful in the following situations:
 

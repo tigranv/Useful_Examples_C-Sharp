@@ -5,13 +5,13 @@
 
 > Reflection is useful in the following situations:
 
-* When you have to access attributes in your program's metadata. For more information, see Retrieving Information Stored in Attributes.
+* When you have to access attributes in your program's metadata.
 
 * For examining and instantiating types in an assembly.
 
 * For building new types at runtime. Use classes in System.Reflection.Emit.
 
-* For performing late binding, accessing methods on types created at run time. See the topic Dynamically Loading and Using Types.
+* For performing late binding, accessing methods on types created at run time.
 
 
 > **Example of loading assembly and getting anformation about**

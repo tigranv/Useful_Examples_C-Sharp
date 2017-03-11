@@ -8,8 +8,7 @@ C# provides a mechanism for defining declarative tags, called [**Attributes**] (
 * Associating help documentation with program entities (through a Help attribute).
 * Associating value editors to a specific type in a GUI framework (through a ValueEditor attribute).
 
-**Declaring an Attribute Class**
-Declaring an attribute in C# is simple — it takes the form of a class declaration that inherits from System.Attribute and has been marked with the AttributeUsage attribute as shown below:
+**Declaring an Attribute Class** in C# is simple — it takes the form of a class declaration that inherits from System.Attribute and has been marked with the AttributeUsage attribute as shown below:
 
 ```c#
 

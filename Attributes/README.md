@@ -1,17 +1,14 @@
 # Attributes  <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
 
-### Not completed
 
 C# provides a mechanism for defining declarative tags, called [**Attributes**] (https://msdn.microsoft.com/en-us/library/aa287992(v=vs.71).aspx), which you can place on certain entities in your source code to specify additional information. The information that attributes contain can be retrieved at run time through reflection. You can use predefined attributes or you can define your own custom attributes
 
 > Example usage of attributes includes:
 
 * Associating help documentation with program entities (through a Help attribute).
-
 * Associating value editors to a specific type in a GUI framework (through a ValueEditor attribute).
 
 **Declaring an Attribute Class**
-
 Declaring an attribute in C# is simple — it takes the form of a class declaration that inherits from System.Attribute and has been marked with the AttributeUsage attribute as shown below:
 
 ```c#
@@ -45,7 +42,6 @@ namespace Create_Attribute
 }
 ```
 Once the attribute has been created, you then associate the attribute with a particular program element. 
-Then you can use reflection to query its existence and its value.
 
 ```c#
 // Class myClass have attribute Myattribute, and method also have attribute

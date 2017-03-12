@@ -8,7 +8,7 @@ namespace Testing
         static void Main(string[] args)
         {
 
-            //// creating 2 magnets, virtual override polimorphism
+            //// compile time Polimorphism
             //BendingMagnet Bending = new BendingMagnet(1, Material.SCMagnets, 10, BendingRadius.weak, FieldDirection.Left);
             //UndulatorMagnet Undulator = new UndulatorMagnet(1, Material.Ferromagnets, 15);
 
@@ -26,7 +26,7 @@ namespace Testing
             //Console.ReadKey();
 
 
-            // correct way to use polimorphism
+            // run time polimorphism
             Magnet UserMagnet = null;
             Console.WriteLine("Enter the magnet that You Need");
             string magnetName = Console.ReadLine();

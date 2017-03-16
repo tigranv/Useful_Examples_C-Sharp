@@ -3,7 +3,7 @@
 Generic classes and methods combine reusability, type safety and efficiency in a way that their non-generic counterparts cannot. You can create custom generic types and methods to provide your own generalized solutions and design patterns that are type-safe and efficient.
 
 
-> [ClassFactory] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/ClassFactory) is a example of Generic Method, that generates classes 
+> [ClassFactory](https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/ClassFactory) is a example of Generic Method, that generates classes 
 
 
 ```c#
@@ -32,7 +32,7 @@ class Program
 }
 ```
 
-> [MyList] (https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString* given by generic Interface
+> [MyList](https://github.com/tigranv/Useful-examples/tree/master/GenericProgramming/MyList) is a analogy of List<> with following methods *Add, Count, Clear, Contains, ToString* given by generic Interface
 
 
 

@@ -1,6 +1,6 @@
 # Integral Calculator (Delegate) <img src="https://cloud.githubusercontent.com/assets/24522089/21962098/41a510c8-db36-11e6-95ef-eb392a0a1919.png" align="right" width="130px" height="130px" /> 
 
-C# [delegates] (https://msdn.microsoft.com/en-us/library/ms173171.aspx) are similar to pointers to functions, in C or C++. A delegate is a reference type variable that holds the reference to a method. The reference can be changed at runtime. Delegates are especially used for implementing events and the call-back methods.
+C# [delegates](https://msdn.microsoft.com/en-us/library/ms173171.aspx) are similar to pointers to functions, in C or C++. A delegate is a reference type variable that holds the reference to a method. The reference can be changed at runtime. Delegates are especially used for implementing events and the call-back methods.
 
 ### This small project demonstrates how you can create and use delegates
 

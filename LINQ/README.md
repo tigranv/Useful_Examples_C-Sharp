@@ -9,13 +9,13 @@ A query is an expression that retrieves data from a data source. Queries are usu
 
 ###  Here are some small examples of using LINQ
 
-1. [How LINQ Works and General Syntaxis] (https://github.com/tigranv/Useful-examples/tree/master/LINQ/How%20LINQ%20Works)
+1. [How LINQ Works and General Syntaxis](https://github.com/tigranv/Useful-examples/tree/master/LINQ/How%20LINQ%20Works)
 
-2. [Group Keyword] (https://github.com/tigranv/Useful-examples/tree/master/LINQ/Group%20Keyword)
+2. [Group Keyword](https://github.com/tigranv/Useful-examples/tree/master/LINQ/Group%20Keyword)
 
-3. [Join Keyword] (https://github.com/tigranv/Useful-examples/tree/master/LINQ/Join%20Keyword)
+3. [Join Keyword](https://github.com/tigranv/Useful-examples/tree/master/LINQ/Join%20Keyword)
 
-4. [Let Keyword] (https://github.com/tigranv/Useful-examples/tree/master/LINQ/Let%20Keyword)
+4. [Let Keyword](https://github.com/tigranv/Useful-examples/tree/master/LINQ/Let%20Keyword)
 
 
 

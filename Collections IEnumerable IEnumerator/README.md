@@ -125,7 +125,7 @@ IEnumerator IEnumerable.GetEnumerator()
 
 ### Examples of using IEnumerable  and IEnumerator
 
-> [**MyList**] (https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
+> [**MyList**](https://github.com/tigranv/Useful-examples/blob/master/Collections%20IEnumerable%20IEnumerator/MyList/MyList.cs) is an analogy of class List<T> 
 
 ```c#
     class MyList<T>

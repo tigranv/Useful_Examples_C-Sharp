@@ -19,7 +19,7 @@ This is the ultimate base class of all classes in the .NET Framework; it is the 
 |  **Object**()| constructor. | 
 | **~Object**()| (**protected**)Finalizer: Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. | 
 
-### [MemberwiseClone] (https://msdn.microsoft.com/en-us/library/system.object.memberwiseclone(v=vs.110).aspx), [ICloneable] (https://msdn.microsoft.com/en-us/library/system.icloneable(v=vs.110).aspx) 
+### [MemberwiseClone](https://msdn.microsoft.com/en-us/library/system.object.memberwiseclone(v=vs.110).aspx), [ICloneable](https://msdn.microsoft.com/en-us/library/system.icloneable(v=vs.110).aspx) 
 
 The **MemberwiseClone** method creates a shallow copy by creating a new object, and then copying the nonstatic fields of the current object to the new object. If a field is a value type, a bit-by-bit copy of the field is performed. If a field is a reference type, the reference is copied but the referred object is not; therefore, the original object and its clone refer to the same object.
 
